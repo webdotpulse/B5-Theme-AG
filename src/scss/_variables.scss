@@ -1,21 +1,28 @@
 // Color overrides
-$primary: #1ABC9C; // Vibrant Teal
-$secondary: #E91E63; // Pink
+// Golden Brown Palette: https://www.color-hex.com/color-palette/44722
+$gold-1: #e99c05;
+$gold-2: #f4ae00;
+$gold-3: #f8bf33;
+$gold-4: #f8ce19;
+$gold-5: #ffdc02;
+
+$primary: $gold-1;
+$secondary: $gold-2;
 $success: #198754;
-$info: #0dcaf0;
-$warning: #ffc107;
+$info: $gold-4;
+$warning: $gold-3;
 $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #212529;
 
 // Body
-$body-bg: #ffffff; // Clean white background to match Kelly theme
+$body-bg: #ffffff;
 $body-color: #444;
 
 // Typography
 $font-family-sans-serif: "Montserrat", sans-serif;
-$headings-font-family: "Kelly Slab", serif; // Custom artistic font
-$headings-font-weight: 400; // Kelly Slab is bold enough
+$headings-font-family: "Kelly Slab", serif;
+$headings-font-weight: 400;
 $headings-color: #222;
 
 // Components
