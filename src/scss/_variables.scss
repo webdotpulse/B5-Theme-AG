@@ -1,6 +1,6 @@
 // Color overrides
-$primary: #fd7e14;
-$secondary: #6c757d;
+$primary: #1ABC9C; // Vibrant Teal
+$secondary: #E91E63; // Pink
 $success: #198754;
 $info: #0dcaf0;
 $warning: #ffc107;
@@ -9,14 +9,14 @@ $light: #f8f9fa;
 $dark: #212529;
 
 // Body
-$body-bg: #fffbf5; // Very light orange/cream background
-$body-color: #333;
+$body-bg: #ffffff; // Clean white background to match Kelly theme
+$body-color: #444;
 
 // Typography
-$font-family-sans-serif: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$headings-font-family: "Georgia", "Times New Roman", Times, serif; // Artistic touch for headings
-$headings-font-weight: 700;
-$headings-color: #d35400; // Darker orange for headings
+$font-family-sans-serif: "Montserrat", sans-serif;
+$headings-font-family: "Kelly Slab", serif; // Custom artistic font
+$headings-font-weight: 400; // Kelly Slab is bold enough
+$headings-color: #222;
 
 // Components
 $border-radius: 1rem;

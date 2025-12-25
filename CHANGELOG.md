@@ -21,3 +21,11 @@ All notable changes to this project will be documented in this file.
     - `typography.html`: Showcase of typography and Bootstrap components.
 - Build scripts in `package.json` for compiling SASS.
 - Generated screenshots for all pages.
+
+## [1.1.0] - 2023-10-27
+
+### Changed
+- Updated color palette to Vibrant Teal (`#1ABC9C`) and Pink (`#E91E63`) to add more color.
+- Changed fonts to "Kelly Slab" (headings) and "Montserrat" (body) for a more artistic look.
+- Modified `index.html` hero section to be centered, resembling the "Kelly" theme layout.
+- Updated `theme.scss` to import Google Fonts.
