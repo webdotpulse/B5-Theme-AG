@@ -22,6 +22,15 @@ All notable changes to this project will be documented in this file.
 - Build scripts in `package.json` for compiling SASS.
 - Generated screenshots for all pages.
 
+## [Unreleased]
+
+### Changed
+- Increased font size for logo and navigation.
+- Added shadow to navigation bar.
+- Removed "Kelly Slab" font family.
+- Added soft background color to the header on start page.
+- Added custom SVG wave animation script to the start page header.
+
 ## [1.1.0] - 2023-10-27
 
 ### Changed

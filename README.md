@@ -6,9 +6,10 @@ This project provides a custom, orange-based, artistic Bootstrap 5 theme and a p
 
 *   **Custom Bootstrap 5 Theme:**
     *   Golden Brown color palette (`#e99c05`, `#f4ae00`, etc).
-    *   Artistic fonts ("Kelly Slab" for headings, "Montserrat" for body).
+    *   Artistic fonts ("Montserrat" for body).
     *   Rounded corners and soft shadows.
     *   Custom components like an "artistic divider".
+    *   Animated SVG wave header.
 *   **Example Pages:**
     *   Start Page (About Me)
     *   CV / Resume
