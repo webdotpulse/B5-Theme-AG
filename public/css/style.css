@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Montserrat:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
@@ -67,7 +68,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Montserrat", sans-serif;
+  --bs-font-sans-serif: "Caveat Brush", cursive;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -213,7 +214,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Kelly Slab", serif;
+  font-family: "Caveat Brush", cursive;
   font-weight: 400;
   line-height: 1.2;
   color: var(--bs-heading-color);
@@ -6781,9 +6782,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #e99c05;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(233, 156, 5, 0.2);
+}
+.navbar .navbar-brand.text-primary {
+  color: #fff !important;
+}
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #fff !important;
+}
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 footer {
