@@ -5,8 +5,8 @@ This project provides a custom, orange-based, artistic Bootstrap 5 theme and a p
 ## Features
 
 *   **Custom Bootstrap 5 Theme:**
-    *   Orange-based color palette.
-    *   Artistic fonts (Georgia for headings, Segoe UI for body).
+    *   Vibrant Teal and Pink color palette.
+    *   Artistic fonts ("Kelly Slab" for headings, "Montserrat" for body).
     *   Rounded corners and soft shadows.
     *   Custom components like an "artistic divider".
 *   **Example Pages:**
