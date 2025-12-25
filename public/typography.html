@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography & Components | MyArtSite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html"><i class="bi bi-palette-fill"></i> MyArtSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="typography.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display-3 mb-5">Typography & Components</h1>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Headings</h2>
+                    <h1>h1. Bootstrap heading <small class="text-muted">Secondary text</small></h1>
+                    <h2>h2. Bootstrap heading <small class="text-muted">Secondary text</small></h2>
+                    <h3>h3. Bootstrap heading <small class="text-muted">Secondary text</small></h3>
+                    <h4>h4. Bootstrap heading <small class="text-muted">Secondary text</small></h4>
+                    <h5>h5. Bootstrap heading <small class="text-muted">Secondary text</small></h5>
+                    <h6>h6. Bootstrap heading <small class="text-muted">Secondary text</small></h6>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Display Headings</h2>
+                    <h1 class="display-1">Display 1</h1>
+                    <h1 class="display-2">Display 2</h1>
+                    <h1 class="display-3">Display 3</h1>
+                    <h1 class="display-4">Display 4</h1>
+                    <h1 class="display-5">Display 5</h1>
+                    <h1 class="display-6">Display 6</h1>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Paragraphs & Lead</h2>
+                    <p class="lead">
+                        This is a lead paragraph. It stands out from regular paragraphs.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    </p>
+                    <p>
+                        <mark>Highlight text</mark>, <del>deleted text</del>, <s>strikethrough</s>, <ins>inserted text</ins>, <u>underlined</u>, <small>small text</small>, <strong>bold text</strong>, <em>italicized text</em>.
+                    </p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">A well-known quote, contained in a blockquote element.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Colors</h2>
+                    <div class="row g-2">
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-primary text-white rounded">.bg-primary</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-secondary text-white rounded">.bg-secondary</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-success text-white rounded">.bg-success</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-danger text-white rounded">.bg-danger</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-warning text-dark rounded">.bg-warning</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-info text-dark rounded">.bg-info</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-light text-dark rounded">.bg-light</div></div>
+                        <div class="col-md-2"><div class="p-3 mb-2 bg-dark text-white rounded">.bg-dark</div></div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Buttons</h2>
+                    <div class="mb-2">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+                    <div class="mb-2">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                        <button type="button" class="btn btn-outline-light text-dark">Light</button>
+                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Forms</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="mb-3">
+                             <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Components</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h4>Alerts</h4>
+                            <div class="alert alert-primary" role="alert">
+                                A simple primary alert—check it out!
+                            </div>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Badges</h4>
+                            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+                            <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+                            <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+                            <button type="button" class="btn btn-primary position-relative">
+                                Inbox
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Accordion</h4>
+                             <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is the first item's accordion body.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is the second item's accordion body.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-6">
+                            <h4>Modal</h4>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="text-primary border-bottom pb-2">Extra Add-ons (Artistic Divider)</h2>
+                    <p>Custom artistic divider component:</p>
+                    <div class="artistic-divider"></div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 MyArtSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
