@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Examples | Arsela Gjonaj</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .demo-section {
+            position: relative;
+            height: 300px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .demo-content {
+            padding-top: 60px;
+            padding-left: 20px;
+        }
+        .demo-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html"><i class="bi bi-palette-fill"></i> Arsela Gjonaj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Back to Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-5 mt-5">
+        <h1 class="text-center mb-5" style="font-family: 'Kelly Slab', serif;">Navigation Examples</h1>
+
+        <div class="row">
+            <!-- Example 1: Standard Light -->
+            <div class="col-12 mb-5">
+                <h3>1. Standard Light Navbar</h3>
+                <div class="demo-section">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white demo-nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold text-primary" href="#">Brand</a>
+                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="demo-content">
+                        <p>This is a standard light navbar with the primary brand color.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example 2: Primary Color Background -->
+            <div class="col-12 mb-5">
+                <h3>2. Primary Color Background</h3>
+                <div class="demo-section">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary demo-nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold" href="#">Brand</a>
+                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="demo-content">
+                        <p>Using the main brand color (Golden Brown) as the background.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example 3: Secondary Color Background -->
+            <div class="col-12 mb-5">
+                <h3>3. Secondary Color Background</h3>
+                <div class="demo-section">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary demo-nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold" href="#">Brand</a>
+                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="demo-content">
+                        <p>Using the secondary brand color.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example 4: Floating / Glassmorphism -->
+            <div class="col-12 mb-5">
+                <h3>4. Floating / Glass Effect</h3>
+                <div class="demo-section" style="background: url('https://via.placeholder.com/800x400/333/555') center/cover;">
+                    <nav class="navbar navbar-expand-lg navbar-light demo-nav m-3 rounded-pill shadow-lg" style="background: rgba(255, 255, 255, 0.9); width: calc(100% - 2rem);">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold text-primary" href="#">Brand</a>
+                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="demo-content" style="padding-top: 100px;">
+                        <p class="text-white">A floating navbar with rounded corners and slight transparency.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Example 5: Dark Navbar -->
+            <div class="col-12 mb-5">
+                <h3>5. Dark Navbar</h3>
+                <div class="demo-section">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark demo-nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold text-warning" href="#">Brand</a>
+                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item"><a class="nav-link active text-warning" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="demo-content">
+                        <p>Dark navbar with warning (gold) accents.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-3 bg-white text-center">
+        <p class="mb-0">&copy; 2023 Arsela Gjonaj. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
