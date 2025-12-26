@@ -6786,6 +6786,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(233, 156, 5, 0.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+.navbar.fixed-top {
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  width: auto;
+  border-radius: 1.5rem;
 }
 .navbar .navbar-brand {
   font-size: 2rem;
