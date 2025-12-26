@@ -6,10 +6,10 @@ This project provides a custom, orange-based, artistic Bootstrap 5 theme and a p
 
 *   **Custom Bootstrap 5 Theme:**
     *   Golden Brown color palette (`#e99c05`, `#f4ae00`, etc).
-    *   Artistic fonts ("Montserrat" for body).
+    *   Artistic fonts ("Montserrat" for body, "Caveat Brush" for headings).
     *   Rounded corners and soft shadows.
     *   Custom components like an "artistic divider".
-    *   Animated SVG wave header.
+    *   Floating fixed navigation bar.
 *   **Example Pages:**
     *   Start Page (About Me)
     *   CV / Resume
@@ -17,7 +17,9 @@ This project provides a custom, orange-based, artistic Bootstrap 5 theme and a p
     *   Podcast
     *   Blog
     *   Contact
-    *   Typography & Components (Showcase)
+    *   Components (Showcase of custom components)
+    *   Typography
+    *   Navigation Examples
 
 ## Getting Started
 
