@@ -10,76 +10,97 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Arsela Gjonaj</a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">Arsela Gjonaj</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
-                    <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
-                    <li class="nav-item"><a class="nav-link" href="navigation.html">Nav Examples</a></li>
                 </ul>
+                <div class="d-flex">
+                    <a href="contact.html" class="btn btn-primary">Let's Chat</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Header / Hero -->
-    <header class="d-flex flex-column min-vh-100 pt-5 header-soft-bg" style="background-color: #fcf8f0;">
-        <div class="container flex-grow-1 d-flex flex-column" style="position: relative; z-index: 1;">
-            <div class="row flex-grow-1">
-                <div class="col-lg-6 text-center text-lg-start align-self-center">
-                    <h1 class="display-1 fw-bold text-dark mb-3">Arsela Gjonaj</h1>
-                    <p class="h3 text-secondary mb-2">Digital creator</p>
-                    <p class="h4 text-muted mb-2">🎓 A lawyer with an artistic soul</p>
-                    <p class="h4 text-muted mb-2">🎬 Cinéphile/Journalist/ Actress</p>
-                    <p class="lead text-dark mb-5">🎙 ARS ZONE - Podcast on contemporary Albanian filmmakers around the world👇</p>
-                    <a href="podcast.html" class="btn btn-primary btn-lg rounded-pill px-5">Check Podcast</a>
+    <div class="container mb-5">
+        <header class="hero-card">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start z-1">
+                    <h1 class="display-3 fw-bold mb-3">Turn Admiration Into Interaction</h1>
+                    <p class="h3 mb-2" style="opacity: 0.9">Digital Creator & Lawyer</p>
+                    <p class="lead mb-4" style="opacity: 0.8">Help creators engage their fans and become entrepreneurs.</p>
+
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="portfolio.html" class="btn btn-primary btn-lg rounded-pill px-5">Explore Now <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+
+                    <div class="mt-4 d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+                        <span>Follow Us:</span>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok fs-5"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-center align-self-end">
-                     <img src="arsi.png" alt="Arsela Gjonaj" class="img-fluid" style="max-height: 80vh; object-fit: cover;">
+                <div class="col-lg-6 text-center mt-4 mt-lg-0 z-1 position-relative">
+                    <!-- Image Constraints: bottom-aligned, no shadow or rounded classes -->
+                     <img src="arsi.png" alt="Arsela Gjonaj" class="img-fluid" style="max-height: 60vh; object-fit: contain;">
                 </div>
             </div>
-        </div>
-    </header>
+            <!-- Decorative circles/blur could go here -->
+        </header>
+    </div>
+
+    <!-- Artistic Divider -->
+    <div class="artistic-divider"></div>
 
     <!-- Skills Section -->
-    <section class="py-5 bg-white">
+    <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">What I Do</h2>
+            <h2 class="text-center mb-2">Popular Skills</h2>
+            <p class="text-center text-muted mb-5">Empowering you to forge genuine, meaningful connections.</p>
+
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
                         <div class="display-4 text-primary mb-3"><i class="bi bi-code-slash"></i></div>
                         <h3>Web Development</h3>
-                        <p>Building responsive and modern web applications using the latest technologies.</p>
+                        <p class="text-muted">Building responsive and modern web applications using the latest technologies.</p>
+                        <a href="#" class="btn btn-sm btn-secondary mt-3">Learn More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
                         <div class="display-4 text-primary mb-3"><i class="bi bi-brush"></i></div>
                         <h3>Digital Art</h3>
-                        <p>Creating digital illustrations and graphic designs with a focus on vibrant colors.</p>
+                        <p class="text-muted">Creating digital illustrations and graphic designs with a focus on vibrant colors.</p>
+                        <a href="#" class="btn btn-sm btn-secondary mt-3">View Gallery</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 p-4 text-center">
                         <div class="display-4 text-primary mb-3"><i class="bi bi-mic"></i></div>
                         <h3>Podcasting</h3>
-                        <p>Sharing knowledge and interviews with industry leaders in my weekly podcast.</p>
+                        <p class="text-muted">Sharing knowledge and interviews with industry leaders in my weekly podcast.</p>
+                        <a href="#" class="btn btn-sm btn-secondary mt-3">Listen Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Another Artistic Divider -->
+    <div class="artistic-divider"></div>
 
     <!-- Footer -->
     <footer class="mt-auto">
