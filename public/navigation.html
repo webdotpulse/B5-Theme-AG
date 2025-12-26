@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Examples | Arsela Gjonaj</title>
+    <title>Navigation Examples | Creamind</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -15,10 +15,10 @@
             border: 1px solid #ddd;
             margin-bottom: 30px;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 1.5rem;
         }
         .demo-content {
-            padding-top: 60px;
+            padding-top: 80px;
             padding-left: 20px;
         }
         .demo-nav {
@@ -31,31 +31,51 @@
     </style>
 </head>
 <body class="bg-light">
-    <!-- Main Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Arsela Gjonaj</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="navigation.html">Nav Examples</a></li>
-                </ul>
+
+    <!-- Header Wrapper for subpages -->
+    <div class="page-header-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 1px;">CREAMIND</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto bg-white bg-opacity-25 rounded-pill px-3 py-1 backdrop-blur">
+                        <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Become Creator</a></li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="cv.html">CV</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="podcast.html">Podcast</a></li>
+                                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                         <a href="#" class="btn btn-gradient-pink"><i class="bi bi-person-fill"></i></a>
+                    </div>
+                </div>
             </div>
+        </nav>
+
+        <div class="container text-center">
+             <h1 class="display-4 fw-bold">Navigation Examples</h1>
+             <p class="lead">Different ways to style the navbar.</p>
         </div>
-    </nav>
+    </div>
 
-    <div class="container pt-5 mt-5">
-        <h1 class="text-center mb-5" style="font-family: 'Kelly Slab', serif;">Navigation Examples</h1>
-
+    <div class="container mb-5">
         <div class="row">
             <!-- Example 1: Standard Light -->
             <div class="col-12 mb-5">
@@ -63,7 +83,7 @@
                 <div class="demo-section">
                     <nav class="navbar navbar-expand-lg navbar-light bg-white demo-nav">
                         <div class="container-fluid">
-                            <a class="navbar-brand fw-bold text-primary" href="#">Brand</a>
+                            <a class="navbar-brand fw-bold text-gradient-pink" href="#">CREAMIND</a>
                             <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-auto">
@@ -74,18 +94,18 @@
                         </div>
                     </nav>
                     <div class="demo-content">
-                        <p>This is a standard light navbar with the primary brand color.</p>
+                        <p>This is a standard light navbar.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Example 2: Primary Color Background -->
+            <!-- Example 2: Gradient Color Background -->
             <div class="col-12 mb-5">
-                <h3>2. Primary Color Background</h3>
+                <h3>2. Gradient Background</h3>
                 <div class="demo-section">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary demo-nav">
+                    <nav class="navbar navbar-expand-lg navbar-dark demo-nav" style="background: linear-gradient(90deg, #ff6b6b, #ff8e8e);">
                         <div class="container-fluid">
-                            <a class="navbar-brand fw-bold" href="#">Brand</a>
+                            <a class="navbar-brand fw-bold" href="#">CREAMIND</a>
                             <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-auto">
@@ -96,40 +116,18 @@
                         </div>
                     </nav>
                     <div class="demo-content">
-                        <p>Using the main brand color (Golden Brown) as the background.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Example 3: Secondary Color Background -->
-            <div class="col-12 mb-5">
-                <h3>3. Secondary Color Background</h3>
-                <div class="demo-section">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary demo-nav">
-                        <div class="container-fluid">
-                            <a class="navbar-brand fw-bold" href="#">Brand</a>
-                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="demo-content">
-                        <p>Using the secondary brand color.</p>
+                        <p>Using the main brand gradient as the background.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Example 4: Floating / Glassmorphism -->
             <div class="col-12 mb-5">
-                <h3>4. Floating / Glass Effect</h3>
-                <div class="demo-section" style="background: url('https://via.placeholder.com/800x400/333/555') center/cover;">
-                    <nav class="navbar navbar-expand-lg navbar-light demo-nav m-3 rounded-pill shadow-lg" style="background: rgba(255, 255, 255, 0.9); width: calc(100% - 2rem);">
+                <h3>4. Creamind Floating (Default)</h3>
+                <div class="demo-section" style="background: linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%);">
+                    <nav class="navbar navbar-expand-lg navbar-light demo-nav m-3 rounded-pill shadow-lg" style="background: rgba(255, 255, 255, 0.95); width: calc(100% - 2rem); margin: 1rem !important;">
                         <div class="container-fluid">
-                            <a class="navbar-brand fw-bold text-primary" href="#">Brand</a>
+                            <a class="navbar-brand fw-bold" href="#">CREAMIND</a>
                             <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-auto">
@@ -140,29 +138,7 @@
                         </div>
                     </nav>
                     <div class="demo-content" style="padding-top: 100px;">
-                        <p class="text-white">A floating navbar with rounded corners and slight transparency.</p>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Example 5: Dark Navbar -->
-            <div class="col-12 mb-5">
-                <h3>5. Dark Navbar</h3>
-                <div class="demo-section">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark demo-nav">
-                        <div class="container-fluid">
-                            <a class="navbar-brand fw-bold text-warning" href="#">Brand</a>
-                            <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item"><a class="nav-link active text-warning" href="#">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="demo-content">
-                        <p>Dark navbar with warning (gold) accents.</p>
+                        <p class="text-white">The standard floating navbar used in the Creamind theme.</p>
                     </div>
                 </div>
             </div>
@@ -170,9 +146,52 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-auto py-3 bg-white text-center">
-        <p class="mb-0">&copy; 2023 Arsela Gjonaj. All rights reserved.</p>
+    <!-- Fancy Footer -->
+    <footer class="fancy-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 fw-bold">Creamind</h5>
+                    <p class="text-muted small">
+                        Turn Admiration Into Interaction. Join the community of creators and fans today.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted small">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-pill-start" placeholder="Email address" aria-label="Email address">
+                        <button class="btn btn-gradient-pink rounded-pill-end" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                &copy; 2023 Creamind. All rights reserved.
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

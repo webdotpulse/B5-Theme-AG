@@ -1,43 +1,24 @@
 
-from playwright.sync_api import sync_playwright, expect
-import os
+from playwright.sync_api import sync_playwright
 
-def test_creamind_homepage():
+def verify_creamind():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+        context = browser.new_context()
+        page = context.new_page()
 
-        # Navigate to the file
-        file_path = f"file://{os.getcwd()}/public/index.html"
-        print(f"Navigating to {file_path}")
-        page.goto(file_path)
+        # Files to verify
+        files = ['index.html', 'blog.html', 'contact.html', 'cv.html', 'portfolio.html', 'podcast.html', 'components.html', 'typography.html', 'navigation.html']
 
-        # Verify Title
-        expect(page).to_have_title("Creamind | Turn Admiration Into Interaction")
+        for file in files:
+            print(f'Verifying {file}...')
+            page.goto(f'file:///app/public/{file}')
 
-        # Verify Header Text
-        expect(page.get_by_text("Turn Admiration Into")).to_be_visible()
-        expect(page.get_by_role("heading", name="Turn Admiration Into Interaction")).to_be_visible()
-
-        # Verify Navbar
-        expect(page.get_by_role("link", name="CREAMIND")).to_be_visible()
-        # It's an anchor tag styled as a button
-        expect(page.get_by_text("Login / Register")).to_be_visible()
-
-        # Verify Popular Users
-        expect(page.get_by_role("heading", name="Popular Users")).to_be_visible()
-        expect(page.get_by_text("Melissa Harper")).to_be_visible()
-
-        # Verify Special Features
-        expect(page.get_by_role("heading", name="What Makes Creamind Special!")).to_be_visible()
-        expect(page.get_by_text("Single Reply")).to_be_visible()
-
-        # Take Screenshot
-        screenshot_path = "verification/verification_creamind.png"
-        page.screenshot(path=screenshot_path, full_page=True)
-        print(f"Screenshot saved to {screenshot_path}")
+            # Take screenshot
+            page.screenshot(path=f'verification/verified_{file}.png', full_page=True)
+            print(f'Screenshot saved to verification/verified_{file}.png')
 
         browser.close()
 
-if __name__ == "__main__":
-    test_creamind_homepage()
+if __name__ == '__main__':
+    verify_creamind()

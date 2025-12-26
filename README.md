@@ -1,72 +1,43 @@
-# Bootstrap 5 Artistic Theme & Personal Site
+# Creamind Website
 
-This project provides a custom, orange-based, artistic Bootstrap 5 theme and a personal website example using this theme.
+This repository contains the source code for the Creamind website, a platform connecting creators and fans.
 
-## Features
+## Theme
 
-*   **Custom Bootstrap 5 Theme:**
-    *   Golden Brown color palette (`#e99c05`, `#f4ae00`, etc).
-    *   Artistic fonts ("Montserrat" for body, "Caveat Brush" for headings).
-    *   Rounded corners and soft shadows.
-    *   Custom components like an "artistic divider".
-    *   Floating fixed navigation bar.
-*   **Example Pages:**
-    *   Start Page (About Me)
-    *   CV / Resume
-    *   Portfolio
-    *   Podcast
-    *   Blog
-    *   Blog Post (Single Page)
-    *   Contact
-    *   Components (Showcase of custom components)
-    *   Typography
-    *   Navigation Examples
+The website uses a custom Bootstrap 5 theme with the following characteristics:
+-   **Primary Color:** Pink (`#ff6b6b`)
+-   **Secondary Color:** Purple (`#a06cd5`)
+-   **Font:** Montserrat and Caveat Brush (imported via Google Fonts)
+-   **Design Style:** Rounded corners, pill-shaped buttons, gradients, and a clean, modern look.
 
-## Getting Started
+## Directory Structure
 
-### Prerequisites
+-   `public/`: Contains the compiled HTML, CSS, and image files. This is the web root.
+-   `src/scss/`: Contains the SCSS source files.
+    -   `theme.scss`: The main entry point that imports Bootstrap and custom styles.
+    -   `_custom.scss`: Custom styles and overrides for Creamind.
+    -   `_variables.scss`: Bootstrap variable overrides.
 
-*   Node.js and npm
+## Pages
 
-### Installation
+-   `index.html`: The landing page.
+-   `blog.html`: Blog listing page.
+-   `blog-post.html`: Single blog post template.
+-   `contact.html`: Contact form page.
+-   `cv.html`: Curriculum Vitae / Resume page.
+-   `portfolio.html`: Portfolio showcase page.
+-   `podcast.html`: Podcast episodes page.
+-   `components.html`: Style guide and component showcase.
+-   `typography.html`: Typography and basic element showcase.
+-   `navigation.html`: Examples of different navigation bar styles.
 
-1.  Clone the repository.
-2.  Install dependencies:
+## Development
 
-    ```bash
-    npm install
-    ```
+To make changes to the styles:
+1.  Edit the files in `src/scss/`.
+2.  Run `npm install` to install dependencies (if not already done).
+3.  Run `npm run build-css` to compile SCSS to CSS.
 
-### Building the CSS
+## Screenshots
 
-To compile the SASS files to CSS, run:
-
-```bash
-npm run build-css
-```
-
-To watch for changes and automatically rebuild:
-
-```bash
-npm run watch-css
-```
-
-### Viewing the Site
-
-Open `public/index.html` in your browser.
-
-## Project Structure
-
-*   `src/scss/`: Contains the SASS source files.
-    *   `_variables.scss`: Custom variable overrides (colors, fonts, etc.).
-    *   `_custom.scss`: Additional custom styles and artistic touches.
-    *   `theme.scss`: Main entry point that imports Bootstrap and custom files.
-*   `public/`: Contains the static website files.
-    *   `css/`: Compiled CSS.
-    *   `*.html`: HTML pages for the personal site.
-*   `screenshots/`: Screenshots of the generated pages.
-*   `verification/`: Verification scripts and output.
-
-## Revision History
-
-See `CHANGELOG.md` for detailed revision history.
+Screenshots of the pages are generated in the `screenshots/` directory using `python3 take_screenshots.py`.
