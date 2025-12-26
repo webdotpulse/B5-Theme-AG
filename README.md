@@ -16,6 +16,7 @@ This project provides a custom, orange-based, artistic Bootstrap 5 theme and a p
     *   Portfolio
     *   Podcast
     *   Blog
+    *   Blog Post (Single Page)
     *   Contact
     *   Components (Showcase of custom components)
     *   Typography
@@ -64,6 +65,7 @@ Open `public/index.html` in your browser.
     *   `css/`: Compiled CSS.
     *   `*.html`: HTML pages for the personal site.
 *   `screenshots/`: Screenshots of the generated pages.
+*   `verification/`: Verification scripts and output.
 
 ## Revision History
 

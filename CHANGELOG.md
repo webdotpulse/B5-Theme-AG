@@ -5,10 +5,13 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
-- Created `components.html` to showcase custom components (buttons, cards, alerts, etc.).
-- Added "Components" link to the navigation bar on all pages.
+- Created `blog-post.html` as a dedicated page for individual blog posts.
+- Added content for the blog post "Understanding Color Theory".
 
 ### Changed
+- Updated `index.html` header image to use the local `arsi.png` file instead of a remote URL.
+- Created `components.html` to showcase custom components (buttons, cards, alerts, etc.).
+- Added "Components" link to the navigation bar on all pages.
 - Removed Animated SVG wave header and associated script (`header-animation.js`).
 - Updated Navbar styling to be fixed to top and visually "floating" (detached with margins and rounded corners).
 - Updated Navigation Examples page (`navigation.html`) with consistent menu and styling.
