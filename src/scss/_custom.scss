@@ -1,83 +1,155 @@
 // Artistic touches
 
+// Gradients
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Buttons
 .btn-primary {
-  background: linear-gradient(45deg, $primary, lighten($primary, 10%));
+  background: linear-gradient(to right, #ff6b6b, #ff8e8e);
   border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  border-radius: 50rem; // Pill shape
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 6px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+  font-weight: bold;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(to right, #ff8e8e, #ff6b6b);
   }
+}
+
+.btn-secondary {
+    background: white;
+    color: $dark;
+    border: none;
+    border-radius: 50rem;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    font-weight: bold;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        background: $white;
+        color: $primary;
+    }
 }
 
 .card {
   border: none;
   background: #fff;
+  border-radius: $border-radius-lg;
   box-shadow: $box-shadow;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  // Clean text
 }
 
 // Custom decorative element
 .artistic-divider {
-  height: 5px;
-  background: linear-gradient(90deg, $primary, $warning, $danger);
-  margin: 2rem 0;
-  border-radius: 5px;
+  height: 6px;
+  background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 50%, #a18cd1 100%);
+  margin: 3rem auto;
+  border-radius: 10px;
+  width: 100px;
 }
 
 // Navbar styling
 .navbar {
-  background-color: $primary;
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid rgba($primary, 0.2);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); // Add shadow
+  background-color: transparent; // Floating look
+  backdrop-filter: blur(10px); // keep blur if desired, or remove if strictly transparent
+  // In the image it looks transparent. But we need readability.
+  // Let's use a very light white with opacity or just transparent if on the gradient background.
+  // Since we are fixing it to top, let's make it white with shadow.
+  background-color: rgba(255, 255, 255, 0.9);
+
+  border-bottom: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   transition: all 0.3s ease-in-out;
 
   &.fixed-top {
     top: 1rem;
-    left: 1rem;
-    right: 1rem;
+    left: 2rem;
+    right: 2rem;
     width: auto;
+    border-radius: 50rem; // Pill shaped navbar? Or just rounded. Image shows full width but maybe detached.
+    // The image header shows logo left, links center, button right.
+    // It looks like it's just the top of the page, not necessarily a floating pill.
+    // But the memory says "The navigation bar is styled to be fixed to the top but visually floating (detached from screen edges with rounded corners)."
+    // So I will keep the floating detached style.
     border-radius: $border-radius-lg;
   }
 
   .navbar-brand {
-    font-size: 2rem; // Bigger font size for logo
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $dark !important;
   }
 
   .nav-link {
-    font-size: 1.25rem; // Bigger font size for nav links
-  }
+    font-size: 1.1rem;
+    color: $dark !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
 
-  // Ensure logo text is visible against primary background if it uses text-primary
-  .navbar-brand.text-primary {
-    color: $white !important; // Override text-primary to be white for contrast
-  }
-
-  // Update nav links to be visible on primary background
-  .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
     &:hover, &.active {
-      color: $white !important;
+      color: $primary !important;
     }
   }
+}
 
-  .navbar-toggler {
-      border-color: rgba(255,255,255,0.5);
-      .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-      }
-  }
+// Hero Card
+.hero-card {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); // Purple to Pink gradient
+    // Or closer to the image: Darkish background or vibrant gradient.
+    // Let's use a vibrant gradient based on the image feeling.
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); // Blue/Green? No.
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%); // Pink/Yellow
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 122) 0%, rgb(255, 175, 123) 90%); // Coral/Peach
+
+    // Let's use the colors from variables
+    background: linear-gradient(135deg, $primary, $secondary);
+
+    border-radius: 3rem;
+    padding: 3rem;
+    color: white;
+    margin-top: 6rem; // Space for the fixed navbar
+    position: relative;
+    overflow: hidden; // For the image
+
+    h1, h2, h3, h4, p {
+        color: white;
+    }
+
+    .btn-primary {
+        background: white;
+        color: $primary;
+        &:hover {
+            background: $light;
+            color: darken($primary, 10%);
+        }
+    }
 }
 
 // Footer
@@ -85,12 +157,4 @@ footer {
   background-color: $dark;
   color: lighten($primary, 30%);
   padding: 3rem 0;
-}
-
-// Typography page extras
-.type-example {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-left: 5px solid $primary;
-  background-color: rgba($primary, 0.1);
 }
