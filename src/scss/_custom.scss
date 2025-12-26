@@ -1,160 +1,190 @@
-// Artistic touches
 
-// Gradients
-.bg-gradient-primary {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-}
+// Custom Styles for Creamind
 
-.bg-gradient-secondary {
-  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
-}
-
-.text-gradient {
-  background: linear-gradient(to right, $primary, $secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-// Buttons
-.btn-primary {
-  background: linear-gradient(to right, #ff6b6b, #ff8e8e);
-  border: none;
-  border-radius: 50rem; // Pill shape
-  padding: 0.75rem 2rem;
-  box-shadow: 0 4px 6px rgba(255, 107, 107, 0.3);
-  transition: all 0.3s ease;
-  font-weight: bold;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(255, 107, 107, 0.4);
-    background: linear-gradient(to right, #ff8e8e, #ff6b6b);
-  }
-}
-
-.btn-secondary {
-    background: white;
-    color: $dark;
-    border: none;
-    border-radius: 50rem;
-    padding: 0.75rem 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    font-weight: bold;
-
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-        background: $white;
-        color: $primary;
-    }
-}
-
-.card {
-  border: none;
-  background: #fff;
-  border-radius: $border-radius-lg;
-  box-shadow: $box-shadow;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  // Clean text
-}
-
-// Custom decorative element
-.artistic-divider {
-  height: 6px;
-  background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 50%, #a18cd1 100%);
-  margin: 3rem auto;
-  border-radius: 10px;
-  width: 100px;
-}
-
-// Navbar styling
+// Navbar adjustments
 .navbar {
-  background-color: transparent; // Floating look
-  backdrop-filter: blur(10px); // keep blur if desired, or remove if strictly transparent
-  // In the image it looks transparent. But we need readability.
-  // Let's use a very light white with opacity or just transparent if on the gradient background.
-  // Since we are fixing it to top, let's make it white with shadow.
-  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1rem 2rem; // Floating effect
+  border-radius: 2rem; // Rounded corners
+  background: rgba(255, 255, 255, 0.95); // White background
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 
-  border-bottom: none;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  transition: all 0.3s ease-in-out;
-
-  &.fixed-top {
-    top: 1rem;
-    left: 2rem;
-    right: 2rem;
-    width: auto;
-    border-radius: 50rem; // Pill shaped navbar? Or just rounded. Image shows full width but maybe detached.
-    // The image header shows logo left, links center, button right.
-    // It looks like it's just the top of the page, not necessarily a floating pill.
-    // But the memory says "The navigation bar is styled to be fixed to the top but visually floating (detached from screen edges with rounded corners)."
-    // So I will keep the floating detached style.
-    border-radius: $border-radius-lg;
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $dark !important;
+  @media (max-width: 991px) {
+    margin: 0;
+    border-radius: 0;
   }
 
   .nav-link {
     font-size: 1.1rem;
-    color: $dark !important;
-    font-weight: 500;
-    margin: 0 0.5rem;
-
-    &:hover, &.active {
-      color: $primary !important;
-    }
+    padding: 0.5rem 1.5rem !important;
   }
 }
 
-// Hero Card
-.hero-card {
-    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); // Purple to Pink gradient
-    // Or closer to the image: Darkish background or vibrant gradient.
-    // Let's use a vibrant gradient based on the image feeling.
-    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); // Blue/Green? No.
-    background: linear-gradient(to right, #fa709a 0%, #fee140 100%); // Pink/Yellow
-    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 122) 0%, rgb(255, 175, 123) 90%); // Coral/Peach
-
-    // Let's use the colors from variables
-    background: linear-gradient(135deg, $primary, $secondary);
-
-    border-radius: 3rem;
-    padding: 3rem;
+.btn-gradient-pink {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
     color: white;
-    margin-top: 6rem; // Space for the fixed navbar
-    position: relative;
-    overflow: hidden; // For the image
+    border: none;
+    border-radius: 50rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-    h1, h2, h3, h4, p {
+    &:hover {
         color: white;
+        background: linear-gradient(90deg, darken(#ff6b6b, 5%), darken(#ff8e8e, 5%));
+    }
+}
+
+
+// Hero Section
+.hero-card {
+    background: transparent; // Remove default card bg if any
+    padding-top: 6rem; // Space for fixed navbar
+    border: none;
+    box-shadow: none;
+
+    h1 {
+        // Gradient text? Mockup is white text on gradient bg, but wait.
+        // The mockup has a huge gradient background BEHIND everything in the hero.
+        // The text is white.
+    }
+}
+
+// Global gradient background for Header?
+// The mockup shows a full width gradient background for the top section.
+// I should apply this to the body or a wrapper?
+// Or maybe just the .hero-section
+.hero-section-wrapper {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    // This is just a guess. Mockup is reddish/purple.
+    // Let's try to match: Top left is red/pink, fading to purple/blue?
+    background: linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    // Actually the mockup shows the gradient covering the whole viewport height almost?
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white; // Text is white in mockup
+
+    h1, p, span, a.text-white {
+        color: white !important;
     }
 
-    .btn-primary {
-        background: white;
-        color: $primary;
+    .navbar {
+       // Navbar is inside? No, fixed top.
+    }
+}
+
+
+// User Cards (Popular Users)
+.user-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s;
+
+  &:hover {
+      transform: translateY(-5px);
+  }
+
+  .card-body-content {
+      padding: 2rem;
+  }
+
+  .user-image-container {
+      height: 100%;
+      min-height: 250px;
+      position: relative;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1.5rem; // Mockup shows rounded image inside card
+      }
+
+      .social-overlay {
+          position: absolute;
+          bottom: 1rem;
+          left: 50%;
+          transform: translateX(-50%);
+          background: white;
+          padding: 0.25rem 0.5rem;
+          border-radius: 2rem;
+          display: flex;
+          gap: 0.5rem;
+
+          i {
+              color: #333;
+          }
+      }
+  }
+
+  .tag {
+      background: #ff6b6b;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+
+      &.tag-secondary {
+          background: #ff8e8e; // lighter pink
+      }
+  }
+}
+
+// Feature Cards
+.feature-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .icon {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+        color: #777;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+    }
+
+    .btn-read-more {
+        background: black;
+        color: white;
+        border-radius: 50rem;
+        padding: 0.3rem 1.2rem;
+        font-size: 0.75rem;
+        text-decoration: none;
+
         &:hover {
-            background: $light;
-            color: darken($primary, 10%);
+            background: #333;
         }
     }
 }
 
-// Footer
-footer {
-  background-color: $dark;
-  color: lighten($primary, 30%);
-  padding: 3rem 0;
+// Override text colors for white background sections
+section {
+    color: #333;
 }
