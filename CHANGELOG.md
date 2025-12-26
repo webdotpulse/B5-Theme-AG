@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+- Major redesign of `index.html` to match "Creamind" mockup.
+- Updated color palette to Creamind Pink (`#ff6b6b`) and Purple (`#a06cd5`).
+- Updated Navbar to be floating, pill-shaped, with "Login / Register" CTA.
+- Updated Hero section with new copy ("Turn Admiration Into Interaction") and gradient background.
+- Replaced "Popular Skills" section with "Popular Users" card layout.
+- Added "What Makes Creamind Special!" feature section.
+- Added custom SASS styles for `.user-card`, `.feature-card`, and gradients in `_custom.scss`.
+
+## [1.2.0] - 2023-10-27
+
 ### Added
 - Created `blog-post.html` as a dedicated page for individual blog posts.
 - Added content for the blog post "Understanding Color Theory".
