@@ -9,6 +9,8 @@ All notable changes to this project will be documented in this file.
 - Added content for the blog post "Understanding Color Theory".
 
 ### Changed
+- Updated `index.html` start page content with new bio details.
+- Updated `index.html` header layout to position the image at the bottom and removed image shadow/rounded styling.
 - Updated `index.html` header image to use the local `arsi.png` file instead of a remote URL.
 - Created `components.html` to showcase custom components (buttons, cards, alerts, etc.).
 - Added "Components" link to the navigation bar on all pages.
