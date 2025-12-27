@@ -31,6 +31,9 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `components.html`: Style guide and component showcase.
 -   `typography.html`: Typography and basic element showcase.
 -   `navigation.html`: Examples of different navigation bar styles.
+-   `login.html`: User login page.
+-   `register.html`: User registration page.
+-   `forgot-password.html`: Password recovery page.
 
 ## Development
 

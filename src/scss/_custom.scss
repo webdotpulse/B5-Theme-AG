@@ -445,3 +445,279 @@ section {
         display: block;
     }
 }
+
+// Pricing Card
+.pricing-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    text-align: center;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-10px);
+        border-color: #ff6b6b;
+    }
+
+    &.featured {
+        background: linear-gradient(135deg, #fff5f7 0%, #fff 100%);
+        border: 2px solid #ff6b6b;
+
+        &::before {
+            content: "Most Popular";
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
+
+    .price {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+        margin: 1.5rem 0;
+
+        span {
+            font-size: 1rem;
+            color: #777;
+            font-weight: normal;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2rem;
+        text-align: left;
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #555;
+
+            i {
+                color: #ff6b6b;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+// Team Member Card
+.team-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    text-align: center;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .team-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+    }
+
+    &:hover .team-img-wrapper img {
+        transform: scale(1.1);
+    }
+
+    .team-info {
+        padding: 1.5rem;
+
+        h5 {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        p {
+            color: #a06cd5; // Secondary color
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .social-links {
+            a {
+                color: #777;
+                margin: 0 0.3rem;
+                font-size: 1.1rem;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: #ff6b6b;
+                }
+            }
+        }
+    }
+}
+
+// Stat Counter
+.stat-counter {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ff6b6b 0%, #a06cd5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    .number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .label {
+        color: #777;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+// Fancy Table
+.fancy-table-wrapper {
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    padding: 1rem;
+
+    .table {
+        margin-bottom: 0;
+
+        thead {
+            th {
+                background-color: #f8f9fa;
+                border-bottom: none;
+                color: #555;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                padding: 1.2rem 1rem;
+                border-radius: 0.5rem;
+            }
+        }
+
+        tbody {
+            tr {
+                transition: background 0.2s;
+                border-bottom: 1px solid #f0f0f0;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background-color: #fff5f7; // Light pink tint
+
+                    td {
+                        color: #333;
+                    }
+                }
+
+                td {
+                    padding: 1.2rem 1rem;
+                    vertical-align: middle;
+                    color: #666;
+                    border: none;
+                }
+            }
+        }
+
+        // Status Badges
+        .badge-status {
+            padding: 0.4em 0.8em;
+            border-radius: 50rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+
+            &.active {
+                background: rgba(40, 167, 69, 0.1);
+                color: #28a745;
+            }
+            &.pending {
+                background: rgba(255, 193, 7, 0.1);
+                color: #ffc107;
+            }
+            &.inactive {
+                background: rgba(108, 117, 125, 0.1);
+                color: #6c757d;
+            }
+        }
+    }
+}
+
+// More Doodle Variations
+.section-doodle-2 {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 120px;
+        height: 120px;
+        // Abstract Blob
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23A06CD5' fill-opacity='0.1' d='M47.5,-52.9C61.4,-43.6,72.5,-29.4,76.4,-13.6C80.3,2.2,77,19.6,67.6,33.4C58.2,47.2,42.7,57.4,26.6,63.1C10.5,68.8,-6.2,70,-21.9,64.8C-37.6,59.6,-52.3,48,-62.4,33.5C-72.5,19,-78,1.6,-73.4,-13.6C-68.8,-28.8,-54.1,-41.8,-39.7,-50.9C-25.3,-60,-11.2,-65.2,1.9,-67.5C15,-69.7,33.6,-62.2,47.5,-52.9Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+    }
+}
+
+.section-doodle-3 {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 150px;
+        height: 150px;
+        // Geometric
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF6B6B' fill-opacity='0.08' d='M44.3,-48.8C55.6,-38.7,61.8,-22.3,62.7,-6.2C63.6,9.9,59.3,25.7,49.8,38.2C40.3,50.7,25.6,59.9,9.8,61.9C-6,63.9,-22.9,58.7,-37.2,48.5C-51.5,38.3,-63.2,23.1,-65.1,6.8C-67,-9.5,-59.1,-26.9,-47.5,-37.6C-35.9,-48.3,-20.6,-52.3,-5,-51.8C10.6,-51.3,26.2,-46.3,33,-58.9L44.3,-48.8Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+    }
+}
