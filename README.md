@@ -46,6 +46,7 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `404.html`: Custom Error page.
 -   `gallery.html`: Image gallery with Lightbox functionality.
 -   `admin.html`: Advanced admin dashboard with sidebar navigation.
+-   `maintenance.html`: "Under Maintenance" page for site downtime.
 
 ## Development
 
@@ -66,3 +67,5 @@ Screenshots of the pages are generated in the `screenshots/` directory using `py
 - **Masonry Layout**: `public/masonry.html` - Grid layout using Masonry.js.
 - **Gallery**: `public/gallery.html` - Responsive image grid with Bootstrap Modal Lightbox.
 - **Admin Dashboard**: `public/admin.html` - Responsive admin interface with collapsible sidebar.
+- **Maintenance Page**: `public/maintenance.html` - A user-friendly "Under Maintenance" page.
+- **File-based Doodles**: Additional doodle backgrounds loaded from SVG files (`.section-doodle-blob`, etc.) have been added to the theme and showcased on `public/doodles.html`.

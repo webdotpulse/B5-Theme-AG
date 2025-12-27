@@ -7638,6 +7638,366 @@ section {
   }
 }
 
+.section-doodle-blob {
+  position: relative;
+}
+.section-doodle-blob::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/blob.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+}
+
+.section-doodle-blob2 {
+  position: relative;
+}
+.section-doodle-blob2::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/blob2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.section-doodle-circle {
+  position: relative;
+}
+.section-doodle-circle::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+.section-doodle-file-cross {
+  position: relative;
+}
+.section-doodle-file-cross::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
+.section-doodle-doodle1 {
+  position: relative;
+}
+.section-doodle-doodle1::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+}
+
+.section-doodle-doodle2 {
+  position: relative;
+}
+.section-doodle-doodle2::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.section-doodle-doodle3 {
+  position: relative;
+}
+.section-doodle-doodle3::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+.section-doodle-doodle4 {
+  position: relative;
+}
+.section-doodle-doodle4::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
+.section-doodle-doodle5 {
+  position: relative;
+}
+.section-doodle-doodle5::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+}
+
+.section-doodle-doodle6 {
+  position: relative;
+}
+.section-doodle-doodle6::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle6.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.section-doodle-doodle7 {
+  position: relative;
+}
+.section-doodle-doodle7::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle7.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+.section-doodle-doodle8 {
+  position: relative;
+}
+.section-doodle-doodle8::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle8.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
+.section-doodle-doodle9 {
+  position: relative;
+}
+.section-doodle-doodle9::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle9.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+}
+
+.section-doodle-doodle10 {
+  position: relative;
+}
+.section-doodle-doodle10::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle10.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.section-doodle-doodle11 {
+  position: relative;
+}
+.section-doodle-doodle11::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/doodle11.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+.section-doodle-hex {
+  position: relative;
+}
+.section-doodle-hex::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/hex.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
+.section-doodle-pie {
+  position: relative;
+}
+.section-doodle-pie::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/pie.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+}
+
+.section-doodle-scribble {
+  position: relative;
+}
+.section-doodle-scribble::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/scribble.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+}
+
+.section-doodle-file-star {
+  position: relative;
+}
+.section-doodle-file-star::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+.section-doodle-tri {
+  position: relative;
+}
+.section-doodle-tri::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/doodles/tri.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
 .clearfix::after {
   display: block;
   clear: both;
