@@ -1,3 +1,4 @@
+
 from playwright.sync_api import sync_playwright
 import os
 
@@ -6,31 +7,36 @@ def run():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        # Verify Login Page
-        print("Verifying Login Page...")
-        page.goto(f"file://{os.getcwd()}/public/login.html")
-        page.screenshot(path="verification/verified_login.png")
-        print("Login Page screenshot saved.")
+        # Get the absolute path to the gallery file
+        cwd = os.getcwd()
+        gallery_url = f"file://{cwd}/public/gallery.html"
+        admin_url = f"file://{cwd}/public/admin.html"
 
-        # Verify Register Page
-        print("Verifying Register Page...")
-        page.goto(f"file://{os.getcwd()}/public/register.html")
-        page.screenshot(path="verification/verified_register.png")
-        print("Register Page screenshot saved.")
+        print(f"Navigating to Gallery: {gallery_url}")
+        page.goto(gallery_url)
+        page.screenshot(path="verification/verified_gallery.png")
+        print("Gallery screenshot saved.")
 
-        # Verify Forgot Password Page
-        print("Verifying Forgot Password Page...")
-        page.goto(f"file://{os.getcwd()}/public/forgot-password.html")
-        page.screenshot(path="verification/verified_forgot_password.png")
-        print("Forgot Password Page screenshot saved.")
+        # Test Lightbox (Click first item)
+        # Note: Transitions take time, so we wait a bit
+        page.locator(".gallery-item").first.click()
+        page.wait_for_timeout(1000) # Wait for modal to open
+        page.screenshot(path="verification/verified_gallery_lightbox.png")
+        print("Gallery Lightbox screenshot saved.")
 
-        # Verify Components Page (Fancy Table & Cards)
-        print("Verifying Components Page...")
-        page.goto(f"file://{os.getcwd()}/public/components.html")
-        # Scroll down to see new components
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.screenshot(path="verification/verified_components_full.png", full_page=True)
-        print("Components Page screenshot saved.")
+        print(f"Navigating to Admin: {admin_url}")
+        page.goto(admin_url)
+        page.screenshot(path="verification/verified_admin.png")
+        print("Admin screenshot saved.")
+
+        # Test Sidebar Mobile Toggle (emulate mobile)
+        page.set_viewport_size({"width": 375, "height": 812})
+        page.reload()
+        page.wait_for_timeout(500)
+        page.locator("#sidebarToggle").click()
+        page.wait_for_timeout(500) # Wait for sidebar slide
+        page.screenshot(path="verification/verified_admin_mobile_sidebar.png")
+        print("Admin Mobile Sidebar screenshot saved.")
 
         browser.close()
 

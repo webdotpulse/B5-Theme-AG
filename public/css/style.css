@@ -7507,6 +7507,137 @@ section {
   text-transform: uppercase;
 }
 
+.gallery-item {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  height: 250px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.modal-lightbox .modal-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.modal-lightbox .modal-body {
+  padding: 0;
+}
+.modal-lightbox .carousel-item {
+  text-align: center;
+}
+.modal-lightbox .carousel-item img {
+  max-height: 80vh;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.modal-lightbox .carousel-control-prev, .modal-lightbox .carousel-control-next {
+  width: 5%;
+}
+
+.admin-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.admin-sidebar {
+  width: 280px;
+  background: white;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+@media (max-width: 991px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+  }
+  .admin-sidebar.show {
+    transform: translateX(0);
+  }
+}
+.admin-sidebar .sidebar-brand {
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+.admin-sidebar .nav-link {
+  color: #555;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.2s;
+}
+.admin-sidebar .nav-link:hover, .admin-sidebar .nav-link.active {
+  background: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+}
+.admin-sidebar .nav-link i {
+  font-size: 1.2rem;
+}
+.admin-sidebar .sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.admin-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 2rem;
+}
+@media (max-width: 991px) {
+  .admin-content {
+    margin-left: 0;
+  }
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.admin-header .sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .admin-header .sidebar-toggle {
+    display: block;
+  }
+}
+
 .clearfix::after {
   display: block;
   clear: both;

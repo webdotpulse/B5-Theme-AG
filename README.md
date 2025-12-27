@@ -44,6 +44,8 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `register.html`: User registration page.
 -   `forgot-password.html`: Password recovery page.
 -   `404.html`: Custom Error page.
+-   `gallery.html`: Image gallery with Lightbox functionality.
+-   `admin.html`: Advanced admin dashboard with sidebar navigation.
 
 ## Development
 
@@ -62,3 +64,5 @@ Screenshots of the pages are generated in the `screenshots/` directory using `py
 - **Carousel Example**: `public/carousel.html` - Standard carousel implementation.
 - **Cheatsheet**: `public/cheatsheet.html` - Sidebar navigation with component examples.
 - **Masonry Layout**: `public/masonry.html` - Grid layout using Masonry.js.
+- **Gallery**: `public/gallery.html` - Responsive image grid with Bootstrap Modal Lightbox.
+- **Admin Dashboard**: `public/admin.html` - Responsive admin interface with collapsible sidebar.
