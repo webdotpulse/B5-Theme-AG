@@ -31,9 +31,15 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `podcast.html`: Podcast episodes page.
 -   `components.html`: Style guide and component showcase.
 -   `backgrounds.html`: Showcase of available background styles and gradients.
+-   `doodles.html`: Comprehensive showcase of all decorative background doodles.
 -   `documentation.html`: Project documentation and guidelines.
 -   `typography.html`: Typography and basic element showcase.
 -   `navigation.html`: Examples of different navigation bar styles.
+-   `carousel.html`: Example page featuring a Bootstrap carousel.
+-   `cheatsheet.html`: Reference page modeled after Bootstrap's cheatsheet, showing various elements.
+-   `masonry.html`: Example page showcasing a Masonry layout using Bootstrap cards.
+-   `code-examples.html`: Provides styled code snippets for developers.
+-   `icons.html`: Displays available icons and style variations.
 -   `login.html`: User login page.
 -   `register.html`: User registration page.
 -   `forgot-password.html`: Password recovery page.
@@ -50,8 +56,9 @@ To make changes to the styles:
 
 Screenshots of the pages are generated in the `screenshots/` directory using `python3 take_screenshots.py`.
 
-## New Additions (Current Session)
+## New Additions
 
-- **Icons Page**: `public/icons.html` - Displays available icons and style variations.
-- **Code Examples Page**: `public/code-examples.html` - Provides styled code snippets for developers.
-- **New Components**: Custom Accordion, Tabs, and additional Doodles (Star, Cross).
+- **Doodles Page**: `public/doodles.html` - All 7 doodle variations in one place.
+- **Carousel Example**: `public/carousel.html` - Standard carousel implementation.
+- **Cheatsheet**: `public/cheatsheet.html` - Sidebar navigation with component examples.
+- **Masonry Layout**: `public/masonry.html` - Grid layout using Masonry.js.

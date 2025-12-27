@@ -6,9 +6,15 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 -   **New Pages**:
+    -   `doodles.html`: A dedicated page showcasing all 7 decorative background doodles.
+    -   `carousel.html`: A page featuring a standard Bootstrap carousel component.
+    -   `cheatsheet.html`: A comprehensive reference page modeled after the Bootstrap cheatsheet, with a sidebar and various component examples.
+    -   `masonry.html`: An example page demonstrating a Pinterest-style masonry layout using Bootstrap cards.
     -   `backgrounds.html`: A showcase page for background gradients and styles.
     -   `documentation.html`: A comprehensive documentation page for the project.
     -   `404.html`: A custom error page with a friendly design and home link.
+-   **Navigation**:
+    -   Added "Doodles", "Carousel Example", "Cheatsheet", and "Masonry" links to the "More" dropdown in the main navigation bar.
 -   **Doodles & Design**:
     -   Implemented "doodles" (SVG background patterns) extensively across the site (`index`, `components`, `contact`, `portfolio`, `blog`, `podcast`) to enhance visual appeal.
     -   Created `cv.html` if missing (verified link integrity).
@@ -37,10 +43,18 @@ All notable changes to this project will be documented in this file.
     -   Timeline component (`.timeline-item`).
 -   Added decorative "doodles" (background SVGs) to sections via `.section-doodle`.
 -   Created `public/js/main.js` to handle frontend logic.
+-   New doodle SVG assets: `star.svg`, `cross.svg`.
+-   New CSS classes for doodles: `.section-doodle-6`, `.section-doodle-7`.
+-   New custom components: Accordion, Custom Tabs, Custom Alert, Custom Progress.
+-   New page: `public/icons.html` showcasing icon variations.
+-   New page: `public/code-examples.html` showcasing code blocks.
+-   Added "Icons" and "Code Examples" to the main navigation menu.
 
 ### Changed (Previous)
 -   **Rebranding**: Replaced "CREAMIND" with "Arsela Gjonaj" across all pages and content.
 -   Updated `components.html` to showcase new components.
+-   Updated `public/components.html` to include new custom components.
+-   Updated main navigation in `index.html` and other subpages.
 
 ### Fixed
 -   Fixed missing interactive elements in static HTML by introducing `main.js`.
@@ -88,17 +102,3 @@ All notable changes to this project will be documented in this file.
     - `typography.html`: Showcase of typography and Bootstrap components.
 - Build scripts in `package.json` for compiling SASS.
 - Generated screenshots for all pages.
-
-## [Unreleased]
-
-### Added
-- New doodle SVG assets: `star.svg`, `cross.svg`.
-- New CSS classes for doodles: `.section-doodle-6`, `.section-doodle-7`.
-- New custom components: Accordion, Custom Tabs, Custom Alert, Custom Progress.
-- New page: `public/icons.html` showcasing icon variations.
-- New page: `public/code-examples.html` showcasing code blocks.
-- Added "Icons" and "Code Examples" to the main navigation menu.
-
-### Changed
-- Updated `public/components.html` to include new custom components.
-- Updated main navigation in `index.html` and other subpages.
