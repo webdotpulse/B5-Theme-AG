@@ -1,6 +1,6 @@
-# Creamind Website
+# Arsela Gjonaj (formerly Creamind) Website
 
-This repository contains the source code for the Creamind website, a platform connecting creators and fans.
+This repository contains the source code for the Arsela Gjonaj personal website (rebranded from Creamind), a platform connecting creators and fans.
 
 ## Theme
 
@@ -12,10 +12,11 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 
 ## Directory Structure
 
--   `public/`: Contains the compiled HTML, CSS, and image files. This is the web root.
+-   `public/`: Contains the compiled HTML, CSS, JS, and image files. This is the web root.
+    -   `js/main.js`: Contains frontend logic (Go to Top, Language Changer).
 -   `src/scss/`: Contains the SCSS source files.
     -   `theme.scss`: The main entry point that imports Bootstrap and custom styles.
-    -   `_custom.scss`: Custom styles and overrides for Creamind.
+    -   `_custom.scss`: Custom styles and overrides.
     -   `_variables.scss`: Bootstrap variable overrides.
 
 ## Pages
