@@ -721,3 +721,38 @@ section {
         pointer-events: none;
     }
 }
+
+// Extra Doodle Variations
+.section-doodle-4 {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 80px;
+        height: 80px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%2328A745' fill-opacity='0.1' d='M37.5,-47.3C48.9,-38.7,58.3,-27.2,63.1,-13.7C67.9,-0.2,68.1,15.4,60.8,28.6C53.6,41.9,38.9,52.9,23.3,58.8C7.7,64.7,-8.7,65.6,-22.8,59.2C-36.9,52.8,-48.6,39.1,-55.8,23.3C-63,7.5,-65.7,-10.4,-59.4,-25.9C-53.1,-41.4,-37.9,-54.5,-23.4,-60.8C-8.9,-67.1,4.9,-66.6,17.4,-61.8C29.9,-57,41.1,-47.9,37.5,-47.3Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+    }
+}
+
+.section-doodle-5 {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        width: 100px;
+        height: 100px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFC107' fill-opacity='0.1' d='M45.7,-61.5C59.3,-53.2,70.5,-40.7,76.5,-26.3C82.5,-11.9,83.3,4.4,76.9,18.8C70.5,33.2,56.9,45.7,42.4,53.8C27.9,61.9,12.5,65.6,-2.1,68.5C-16.7,71.4,-30.5,73.5,-42.9,67.6C-55.3,61.7,-66.3,47.8,-72.4,32.3C-78.5,16.8,-79.7,-0.3,-73.4,-14.9C-67.1,-29.5,-53.3,-41.6,-39.8,-50C-26.3,-58.4,-13.2,-63.1,1.1,-64.6C15.4,-66.1,32.1,-69.8,45.7,-61.5Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+    }
+}
