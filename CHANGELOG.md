@@ -15,11 +15,14 @@ All notable changes to this project will be documented in this file.
     -   `backgrounds.html`: A showcase page for background gradients and styles.
     -   `documentation.html`: A comprehensive documentation page for the project.
     -   `404.html`: A custom error page with a friendly design and home link.
+    -   `maintenance.html`: An "Under Maintenance" page to display when the site is down for updates.
 -   **Navigation**:
     -   Added "Gallery" and "Admin Dashboard" links to the "More" dropdown in the main navigation bar.
     -   Added "Doodles", "Carousel Example", "Cheatsheet", and "Masonry" links to the "More" dropdown in the main navigation bar.
 -   **Doodles & Design**:
     -   Implemented "doodles" (SVG background patterns) extensively across the site (`index`, `components`, `contact`, `portfolio`, `blog`, `podcast`) to enhance visual appeal.
+    -   Added support for 20+ file-based SVG doodles (e.g., `blob`, `hex`, `doodle1`...`doodle11`) accessible via new CSS classes (e.g., `.section-doodle-blob`).
+    -   Showcased all new file-based doodles on the `doodles.html` page.
     -   Created `cv.html` if missing (verified link integrity).
 
 ### Changed

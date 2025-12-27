@@ -1034,3 +1034,53 @@ section {
         }
     }
 }
+
+
+// File-based Doodles
+
+@mixin doodle-base($url, $pos: 'top-right') {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-image: url($url);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.1;
+
+        @if $pos == 'top-right' {
+            top: 0; right: 0;
+        } @else if $pos == 'top-left' {
+            top: 0; left: 0;
+        } @else if $pos == 'bottom-right' {
+            bottom: 0; right: 0;
+        } @else if $pos == 'bottom-left' {
+            bottom: 0; left: 0;
+        }
+    }
+}
+
+.section-doodle-blob { @include doodle-base("../images/doodles/blob.svg", 'top-right'); }
+.section-doodle-blob2 { @include doodle-base("../images/doodles/blob2.svg", 'top-left'); }
+.section-doodle-circle { @include doodle-base("../images/doodles/circle.svg", 'bottom-right'); }
+.section-doodle-file-cross { @include doodle-base("../images/doodles/cross.svg", 'bottom-left'); }
+.section-doodle-doodle1 { @include doodle-base("../images/doodles/doodle1.svg", 'top-right'); }
+.section-doodle-doodle2 { @include doodle-base("../images/doodles/doodle2.svg", 'top-left'); }
+.section-doodle-doodle3 { @include doodle-base("../images/doodles/doodle3.svg", 'bottom-right'); }
+.section-doodle-doodle4 { @include doodle-base("../images/doodles/doodle4.svg", 'bottom-left'); }
+.section-doodle-doodle5 { @include doodle-base("../images/doodles/doodle5.svg", 'top-right'); }
+.section-doodle-doodle6 { @include doodle-base("../images/doodles/doodle6.svg", 'top-left'); }
+.section-doodle-doodle7 { @include doodle-base("../images/doodles/doodle7.svg", 'bottom-right'); }
+.section-doodle-doodle8 { @include doodle-base("../images/doodles/doodle8.svg", 'bottom-left'); }
+.section-doodle-doodle9 { @include doodle-base("../images/doodles/doodle9.svg", 'top-right'); }
+.section-doodle-doodle10 { @include doodle-base("../images/doodles/doodle10.svg", 'top-left'); }
+.section-doodle-doodle11 { @include doodle-base("../images/doodles/doodle11.svg", 'bottom-right'); }
+.section-doodle-hex { @include doodle-base("../images/doodles/hex.svg", 'bottom-left'); }
+.section-doodle-pie { @include doodle-base("../images/doodles/pie.svg", 'top-right'); }
+.section-doodle-scribble { @include doodle-base("../images/doodles/scribble.svg", 'top-left'); }
+.section-doodle-file-star { @include doodle-base("../images/doodles/star.svg", 'bottom-right'); }
+.section-doodle-tri { @include doodle-base("../images/doodles/tri.svg", 'bottom-left'); }
