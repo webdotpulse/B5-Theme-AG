@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 -   **New Pages**:
+    -   `gallery.html`: An image gallery page featuring a grid of images and a responsive Lightbox modal with carousel navigation.
+    -   `admin.html`: An advanced admin dashboard with a collapsible side menu, statistics widgets, and a recent activity table.
     -   `doodles.html`: A dedicated page showcasing all 7 decorative background doodles.
     -   `carousel.html`: A page featuring a standard Bootstrap carousel component.
     -   `cheatsheet.html`: A comprehensive reference page modeled after the Bootstrap cheatsheet, with a sidebar and various component examples.
@@ -14,6 +16,7 @@ All notable changes to this project will be documented in this file.
     -   `documentation.html`: A comprehensive documentation page for the project.
     -   `404.html`: A custom error page with a friendly design and home link.
 -   **Navigation**:
+    -   Added "Gallery" and "Admin Dashboard" links to the "More" dropdown in the main navigation bar.
     -   Added "Doodles", "Carousel Example", "Cheatsheet", and "Masonry" links to the "More" dropdown in the main navigation bar.
 -   **Doodles & Design**:
     -   Implemented "doodles" (SVG background patterns) extensively across the site (`index`, `components`, `contact`, `portfolio`, `blog`, `podcast`) to enhance visual appeal.

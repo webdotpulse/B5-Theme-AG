@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Arsela Gjonaj</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <nav class="admin-sidebar" id="adminSidebar">
+            <a href="index.html" class="sidebar-brand">Arsela Gjonaj</a>
+
+            <div class="nav flex-column">
+                <a href="#" class="nav-link active">
+                    <i class="bi bi-speedometer2"></i> Dashboard
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-people"></i> Users
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-file-text"></i> Posts
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-images"></i> Media
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-chat-dots"></i> Comments
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-graph-up"></i> Analytics
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-gear"></i> Settings
+                </a>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="nav-link text-danger">
+                    <i class="bi bi-box-arrow-left"></i> Logout
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="admin-content">
+            <header class="admin-header">
+                <div class="d-flex align-items-center gap-3">
+                    <button class="sidebar-toggle" id="sidebarToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <h2 class="fw-bold m-0">Dashboard</h2>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-light rounded-circle position-relative p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><h6 class="dropdown-header">Notifications</h6></li>
+                            <li><a class="dropdown-item" href="#">New user registered</a></li>
+                            <li><a class="dropdown-item" href="#">System update available</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                         <a href="#" class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://ui-avatars.com/api/?name=Admin+User&background=ff6b6b&color=fff" alt="Admin" width="32" height="32" class="rounded-circle me-2">
+                            <span class="d-none d-sm-inline fw-bold">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="index.html">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <div class="stat-counter h-100">
+                        <div class="icon"><i class="bi bi-people-fill"></i></div>
+                        <span class="number">1,245</span>
+                        <span class="label">Total Users</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-counter h-100">
+                        <div class="icon"><i class="bi bi-currency-dollar"></i></div>
+                        <span class="number">$45.2k</span>
+                        <span class="label">Revenue</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-counter h-100">
+                        <div class="icon"><i class="bi bi-file-post"></i></div>
+                        <span class="number">342</span>
+                        <span class="label">Posts</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-counter h-100">
+                        <div class="icon"><i class="bi bi-heart-fill"></i></div>
+                        <span class="number">8.5k</span>
+                        <span class="label">Likes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity Table -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="fancy-table-wrapper">
+                        <div class="d-flex justify-content-between align-items-center mb-3 px-2">
+                            <h5 class="fw-bold m-0">Recent Activity</h5>
+                            <button class="btn btn-sm btn-outline-secondary rounded-pill">View All</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Action</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=random" width="30" height="30" class="rounded-circle me-2" alt="User">
+                                                <span class="fw-bold">John Doe</span>
+                                            </div>
+                                        </td>
+                                        <td>Posted a new comment</td>
+                                        <td>Oct 24, 2023</td>
+                                        <td><span class="badge-status active">Active</span></td>
+                                        <td class="text-end"><button class="btn btn-sm btn-link text-muted"><i class="bi bi-three-dots-vertical"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://ui-avatars.com/api/?name=Alice+Smith&background=random" width="30" height="30" class="rounded-circle me-2" alt="User">
+                                                <span class="fw-bold">Alice Smith</span>
+                                            </div>
+                                        </td>
+                                        <td>Registered new account</td>
+                                        <td>Oct 23, 2023</td>
+                                        <td><span class="badge-status pending">Pending</span></td>
+                                        <td class="text-end"><button class="btn btn-sm btn-link text-muted"><i class="bi bi-three-dots-vertical"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://ui-avatars.com/api/?name=Robert+Brown&background=random" width="30" height="30" class="rounded-circle me-2" alt="User">
+                                                <span class="fw-bold">Robert Brown</span>
+                                            </div>
+                                        </td>
+                                        <td>Updated profile picture</td>
+                                        <td>Oct 22, 2023</td>
+                                        <td><span class="badge-status active">Active</span></td>
+                                        <td class="text-end"><button class="btn btn-sm btn-link text-muted"><i class="bi bi-three-dots-vertical"></i></button></td>
+                                    </tr>
+                                     <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="https://ui-avatars.com/api/?name=Emily+Davis&background=random" width="30" height="30" class="rounded-circle me-2" alt="User">
+                                                <span class="fw-bold">Emily Davis</span>
+                                            </div>
+                                        </td>
+                                        <td>Subscription cancelled</td>
+                                        <td>Oct 21, 2023</td>
+                                        <td><span class="badge-status inactive">Inactive</span></td>
+                                        <td class="text-end"><button class="btn btn-sm btn-link text-muted"><i class="bi bi-three-dots-vertical"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

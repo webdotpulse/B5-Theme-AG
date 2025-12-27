@@ -34,4 +34,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Gallery Lightbox Logic
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightboxCarousel = document.getElementById('lightboxCarousel');
+
+    if (galleryItems.length > 0 && lightboxCarousel) {
+        // Initialize carousel but pause it
+        const carousel = new bootstrap.Carousel(lightboxCarousel, {
+            interval: false // Disable auto-cycling
+        });
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const slideIndex = parseInt(item.getAttribute('data-bs-slide-to'));
+                carousel.to(slideIndex);
+            });
+        });
+    }
+
+    // Admin Sidebar Toggle
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const adminSidebar = document.getElementById('adminSidebar');
+
+    if (sidebarToggle && adminSidebar) {
+        sidebarToggle.addEventListener('click', () => {
+            adminSidebar.classList.toggle('show');
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth < 992) {
+                if (!adminSidebar.contains(e.target) && !sidebarToggle.contains(e.target) && adminSidebar.classList.contains('show')) {
+                    adminSidebar.classList.remove('show');
+                }
+            }
+        });
+    }
 });
