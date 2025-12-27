@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast | Arsela Gjonaj</title>
+    <title>Documentation | Arsela Gjonaj</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 
-    <!-- Header Wrapper for subpages -->
+    <!-- Header Wrapper -->
     <div class="page-header-wrapper">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -18,7 +19,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto bg-white bg-opacity-25 rounded-pill px-3 py-1 backdrop-blur">
                         <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -59,92 +60,70 @@
         </nav>
 
         <div class="container text-center">
-             <h1 class="display-4 fw-bold">The Creative Pulse</h1>
-             <p class="lead">Conversations about art, tech, and everything in between.</p>
+             <h1 class="display-4 fw-bold">Documentation</h1>
+             <p class="lead">Guide to using the Arsela Gjonaj website template.</p>
         </div>
     </div>
 
-    <section class="py-5 section-doodle-5">
-        <div class="container mb-5">
-            <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <!-- Episode 1 -->
-                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
-                                <i class="bi bi-play-fill fs-3"></i>
-                            </div>
-                            <div>
-                                <h5 class="card-title mb-0 fw-bold">Ep. 1: The Future of Digital Art</h5>
-                                <small class="text-muted">October 24, 2023 • 45 min</small>
-                            </div>
-                        </div>
-                        <p class="card-text text-muted">In this episode, we discuss the impact of AI on digital art and how artists can adapt to the changing landscape.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
-                             <div class="text-muted">
-                                <i class="bi bi-spotify mx-1"></i>
-                                <i class="bi bi-apple mx-1"></i>
-                                <i class="bi bi-google mx-1"></i>
-                             </div>
-                        </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sticky-top" style="top: 100px;">
+                    <div class="list-group list-group-flush border rounded-3 overflow-hidden">
+                        <a href="#structure" class="list-group-item list-group-item-action">Project Structure</a>
+                        <a href="#customization" class="list-group-item list-group-item-action">Customization</a>
+                        <a href="#components" class="list-group-item list-group-item-action">Components</a>
+                        <a href="#build" class="list-group-item list-group-item-action">Build & Deploy</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-9">
+                <section id="structure" class="mb-5">
+                    <h2 class="fw-bold mb-3">Project Structure</h2>
+                    <p>The project is organized as follows:</p>
+                    <pre class="bg-light p-3 rounded">
+/
+├── public/          # HTML and compiled assets (css, js, images)
+├── src/
+│   └── scss/        # SASS source files
+├── verification/    # Testing scripts
+├── package.json     # NPM dependencies
+└── README.md        # Project documentation
+                    </pre>
+                </section>
 
-                <!-- Episode 2 -->
-                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
-                                <i class="bi bi-play-fill fs-3"></i>
-                            </div>
-                            <div>
-                                <h5 class="card-title mb-0 fw-bold">Ep. 2: Web Design Trends 2024</h5>
-                                <small class="text-muted">October 17, 2023 • 38 min</small>
-                            </div>
-                        </div>
-                        <p class="card-text text-muted">We explore the upcoming trends in web design, from neomorphism to maximalism, and what to expect in the next year.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
-                             <div class="text-muted">
-                                <i class="bi bi-spotify mx-1"></i>
-                                <i class="bi bi-apple mx-1"></i>
-                                <i class="bi bi-google mx-1"></i>
-                             </div>
-                        </div>
-                    </div>
-                </div>
+                <section id="customization" class="mb-5">
+                    <h2 class="fw-bold mb-3">Customization</h2>
+                    <p>To customize the theme, edit the SCSS files in <code>src/scss/</code>.</p>
+                    <ul>
+                        <li><code>_variables.scss</code>: Define colors, fonts, and bootstrap overrides.</li>
+                        <li><code>_custom.scss</code>: Custom styles for components like cards, hero sections, and doodles.</li>
+                        <li><code>theme.scss</code>: Main entry point that imports Bootstrap and custom files.</li>
+                    </ul>
+                </section>
 
-                <!-- Episode 3 -->
-                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
-                                <i class="bi bi-play-fill fs-3"></i>
-                            </div>
-                            <div>
-                                <h5 class="card-title mb-0 fw-bold">Ep. 3: Interview with Jane Doe</h5>
-                                <small class="text-muted">October 10, 2023 • 52 min</small>
-                            </div>
-                        </div>
-                        <p class="card-text text-muted">A deep dive into the career of renowned UX designer Jane Doe, discussing her journey and advice for aspiring designers.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
-                             <div class="text-muted">
-                                <i class="bi bi-spotify mx-1"></i>
-                                <i class="bi bi-apple mx-1"></i>
-                                <i class="bi bi-google mx-1"></i>
-                             </div>
-                        </div>
-                    </div>
-                </div>
+                <section id="components" class="mb-5">
+                    <h2 class="fw-bold mb-3">Components</h2>
+                    <p>We use various custom components:</p>
+                    <ul>
+                        <li><strong>Hero Section:</strong> Uses `.hero-section-wrapper` for gradient backgrounds.</li>
+                        <li><strong>Cards:</strong> `.user-card`, `.feature-card`, `.pricing-card`, `.team-card`.</li>
+                        <li><strong>Buttons:</strong> `.btn-gradient-pink` for the primary action button.</li>
+                        <li><strong>Doodles:</strong> Decorative background elements using `.section-doodle` classes.</li>
+                    </ul>
+                    <p>See <a href="components.html">Components Page</a> for visual examples.</p>
+                </section>
 
+                <section id="build" class="mb-5">
+                    <h2 class="fw-bold mb-3">Build & Deploy</h2>
+                    <p>To compile the SCSS to CSS:</p>
+                    <pre class="bg-dark text-white p-3 rounded">npm install
+npm run build-css</pre>
+                    <p>This generates `public/css/style.css`. The website is static and can be deployed to any static site host.</p>
+                </section>
             </div>
         </div>
     </div>
-
-    </section>
 
     <!-- Fancy Footer -->
     <footer class="fancy-footer">

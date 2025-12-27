@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+-   **New Pages**:
+    -   `backgrounds.html`: A showcase page for background gradients and styles.
+    -   `documentation.html`: A comprehensive documentation page for the project.
+    -   `404.html`: A custom error page with a friendly design and home link.
+-   **Doodles & Design**:
+    -   Implemented "doodles" (SVG background patterns) extensively across the site (`index`, `components`, `contact`, `portfolio`, `blog`, `podcast`) to enhance visual appeal.
+    -   Created `cv.html` if missing (verified link integrity).
+
+### Changed
+-   **Navigation**:
+    -   Restructured the main menu: Added "Podcast", "Blog", "Portfolio", "CV", "Contact" as primary items.
+    -   Moved secondary items ("About", "Services", etc.) to a "More" dropdown.
+    -   **Login Button**: Styled the login button as a rounded, pill-shaped gradient button and linked it to `login.html`.
+
+### Added (Previous)
 -   **Authentication Pages**: Created `login.html`, `register.html`, and `forgot-password.html` with consistent branding and fancy forms.
 -   **New Custom Components**:
     -   `Pricing Card` (`.pricing-card`): Highlighted pricing options with badges.
@@ -13,8 +28,6 @@ All notable changes to this project will be documented in this file.
     -   `Fancy Table` (`.fancy-table-wrapper`): A styled table with status badges and actions.
 -   **Decorative Doodles**: Added `.section-doodle-2` and `.section-doodle-3` SVG background patterns and applied them to `index.html`.
 -   **Updated Components Page**: Updated `components.html` to showcase the new tables, cards, and counters.
-
-### Added (Previous)
 -   Added "Go to Top" button to all pages, visible on scroll.
 -   Added language changer dropdown (EN/SQ) to the navigation bar on all pages.
 -   Added new custom components to `components.html`:
@@ -25,7 +38,7 @@ All notable changes to this project will be documented in this file.
 -   Added decorative "doodles" (background SVGs) to sections via `.section-doodle`.
 -   Created `public/js/main.js` to handle frontend logic.
 
-### Changed
+### Changed (Previous)
 -   **Rebranding**: Replaced "CREAMIND" with "Arsela Gjonaj" across all pages and content.
 -   Updated `components.html` to showcase new components.
 

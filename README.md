@@ -9,6 +9,7 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   **Secondary Color:** Purple (`#a06cd5`)
 -   **Font:** Montserrat and Caveat Brush (imported via Google Fonts)
 -   **Design Style:** Rounded corners, pill-shaped buttons, gradients, and a clean, modern look.
+-   **Doodles:** Decorative SVG background patterns (`.section-doodle` variants) are used extensively for visual interest.
 
 ## Directory Structure
 
@@ -29,11 +30,14 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `portfolio.html`: Portfolio showcase page.
 -   `podcast.html`: Podcast episodes page.
 -   `components.html`: Style guide and component showcase.
+-   `backgrounds.html`: Showcase of available background styles and gradients.
+-   `documentation.html`: Project documentation and guidelines.
 -   `typography.html`: Typography and basic element showcase.
 -   `navigation.html`: Examples of different navigation bar styles.
 -   `login.html`: User login page.
 -   `register.html`: User registration page.
 -   `forgot-password.html`: Password recovery page.
+-   `404.html`: Custom Error page.
 
 ## Development
 
