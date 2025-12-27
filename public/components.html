@@ -43,12 +43,9 @@
                                 <li><a class="dropdown-item" href="components.html">Components</a></li>
                                 <li><a class="dropdown-item" href="typography.html">Typography</a></li>
                                 <li><a class="dropdown-item" href="backgrounds.html">Backgrounds</a></li>
+                                <li><a class="dropdown-item" href="icons.html">Icons</a></li>
+                                <li><a class="dropdown-item" href="code-examples.html">Code Examples</a></li>
                                 <li><a class="dropdown-item" href="documentation.html">Documentation</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">How it works</a></li>
-                                <li><a class="dropdown-item" href="#">Features</a></li>
-                                <li><a class="dropdown-item" href="#">Community</a></li>
-                                <li><a class="dropdown-item" href="#">Become Creator</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -376,6 +373,67 @@
                     </div>
                     <div class="progress" style="border-radius: 1rem;">
                         <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Custom Components (Accordion, Tabs) -->
+             <div class="mb-5">
+                <h2 class="mb-4">More Interactivity</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Custom Accordion</h5>
+                        <div class="accordion accordion-custom" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Custom Tabs</h5>
+                        <ul class="nav nav-tabs nav-tabs-custom mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content p-4 bg-white rounded shadow-sm" id="myTabContent" style="border-radius: 1.5rem;">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <p class="mb-0">This is the <strong>Home</strong> tab content. Clean and simple typography.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <p class="mb-0">This is the <strong>Profile</strong> tab content. You can add any component here.</p>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <p class="mb-0">This is the <strong>Contact</strong> tab content. Get in touch with us.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

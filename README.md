@@ -49,3 +49,9 @@ To make changes to the styles:
 ## Screenshots
 
 Screenshots of the pages are generated in the `screenshots/` directory using `python3 take_screenshots.py`.
+
+## New Additions (Current Session)
+
+- **Icons Page**: `public/icons.html` - Displays available icons and style variations.
+- **Code Examples Page**: `public/code-examples.html` - Provides styled code snippets for developers.
+- **New Components**: Custom Accordion, Tabs, and additional Doodles (Star, Cross).
