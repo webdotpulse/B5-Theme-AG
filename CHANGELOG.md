@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+-   **Authentication Pages**: Created `login.html`, `register.html`, and `forgot-password.html` with consistent branding and fancy forms.
+-   **New Custom Components**:
+    -   `Pricing Card` (`.pricing-card`): Highlighted pricing options with badges.
+    -   `Team Card` (`.team-card`): Profile cards for team members with social links.
+    -   `Stat Counter` (`.stat-counter`): Animated-style statistic counters.
+    -   `Fancy Table` (`.fancy-table-wrapper`): A styled table with status badges and actions.
+-   **Decorative Doodles**: Added `.section-doodle-2` and `.section-doodle-3` SVG background patterns and applied them to `index.html`.
+-   **Updated Components Page**: Updated `components.html` to showcase the new tables, cards, and counters.
+
+### Added (Previous)
 -   Added "Go to Top" button to all pages, visible on scroll.
 -   Added language changer dropdown (EN/SQ) to the navigation bar on all pages.
 -   Added new custom components to `components.html`:
