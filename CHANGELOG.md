@@ -88,3 +88,17 @@ All notable changes to this project will be documented in this file.
     - `typography.html`: Showcase of typography and Bootstrap components.
 - Build scripts in `package.json` for compiling SASS.
 - Generated screenshots for all pages.
+
+## [Unreleased]
+
+### Added
+- New doodle SVG assets: `star.svg`, `cross.svg`.
+- New CSS classes for doodles: `.section-doodle-6`, `.section-doodle-7`.
+- New custom components: Accordion, Custom Tabs, Custom Alert, Custom Progress.
+- New page: `public/icons.html` showcasing icon variations.
+- New page: `public/code-examples.html` showcasing code blocks.
+- Added "Icons" and "Code Examples" to the main navigation menu.
+
+### Changed
+- Updated `public/components.html` to include new custom components.
+- Updated main navigation in `index.html` and other subpages.

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backgrounds | Arsela Gjonaj</title>
+    <title>Code Examples | Arsela Gjonaj</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 
-    <!-- Header Wrapper -->
+    <!-- Header Wrapper for subpages -->
     <div class="page-header-wrapper">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -19,7 +19,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto bg-white bg-opacity-25 rounded-pill px-3 py-1 backdrop-blur">
                         <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -57,80 +57,79 @@
         </nav>
 
         <div class="container text-center">
-             <h1 class="display-4 fw-bold">Backgrounds</h1>
-             <p class="lead">Exploring different background styles and gradients.</p>
+             <h1 class="display-4 fw-bold">Code Examples</h1>
+             <p class="lead">Ready-to-use snippets for your development.</p>
         </div>
     </div>
 
-    <!-- Section 1: Hero Gradient (Reference) -->
-    <section class="py-5 text-white" style="background: linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%);">
+    <!-- Code Examples Section -->
+    <section class="py-5 bg-light section-doodle-7">
         <div class="container">
-            <h2 class="fw-bold">Hero Gradient</h2>
-            <p>linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%)</p>
-        </div>
-    </section>
 
-    <!-- Section 2: Solid White -->
-    <section class="py-5 bg-white">
-        <div class="container text-dark">
-            <h2 class="fw-bold">Solid White</h2>
-            <p>background: #ffffff</p>
-        </div>
-    </section>
+            <div class="mb-5">
+                <h2 class="mb-4">HTML Snippets</h2>
+                <p>Basic structure for a custom card.</p>
+                <div class="code-block-wrapper">
+                    <div class="lang-badge">HTML</div>
+<pre><code>&lt;div class="card h-100 border-0 shadow-sm" style="border-radius: 1.5rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title fw-bold"&gt;Card Title&lt;/h5&gt;
+        &lt;p class="card-text text-muted"&gt;Some example text.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-gradient-pink rounded-pill"&gt;Go somewhere&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
 
-    <!-- Section 3: Light Gray -->
-    <section class="py-5" style="background: #f8f9fa;">
-        <div class="container text-dark">
-            <h2 class="fw-bold">Light Gray</h2>
-            <p>background: #f8f9fa</p>
-        </div>
-    </section>
+            <div class="mb-5">
+                <h2 class="mb-4">CSS Styling</h2>
+                <p>How we style the gradient buttons.</p>
+                 <div class="code-block-wrapper">
+                    <div class="lang-badge">CSS</div>
+<pre><code>.btn-gradient-pink {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+    color: white;
+    border: none;
+    border-radius: 50rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
 
-    <!-- Section 4: Light Pink -->
-    <section class="py-5" style="background: #fff5f7;">
-        <div class="container text-dark">
-            <h2 class="fw-bold">Light Pink</h2>
-            <p>background: #fff5f7</p>
-        </div>
-    </section>
+.btn-gradient-pink:hover {
+    background: linear-gradient(90deg, darken(#ff6b6b, 5%), darken(#ff8e8e, 5%));
+    color: white;
+    transform: translateY(-2px);
+}</code></pre>
+                </div>
+            </div>
 
-    <!-- Section 5: Dark Gradient -->
-    <section class="py-5 text-white" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-        <div class="container">
-            <h2 class="fw-bold">Dark Night Gradient</h2>
-            <p>linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)</p>
-        </div>
-    </section>
+            <div class="mb-5">
+                <h2 class="mb-4">JavaScript Logic</h2>
+                <p>Example of the "Go to Top" button logic.</p>
+                 <div class="code-block-wrapper">
+                    <div class="lang-badge">JS</div>
+<pre><code>// Get the button
+let mybutton = document.getElementById("goToTopBtn");
 
-    <!-- Section 6: Soft Peach Gradient -->
-    <section class="py-5 text-dark" style="background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);">
-        <div class="container">
-            <h2 class="fw-bold">Soft Peach</h2>
-            <p>linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)</p>
-        </div>
-    </section>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-    <!-- Section 7: Doodle Background 1 -->
-    <section class="py-5 section-doodle" style="background: #fff;">
-        <div class="container">
-             <h2 class="fw-bold">Doodle Variation 1</h2>
-             <p>Uses .section-doodle class</p>
-        </div>
-    </section>
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.classList.remove("d-none");
+  } else {
+    mybutton.classList.add("d-none");
+  }
+}
 
-    <!-- Section 8: Doodle Background 2 -->
-    <section class="py-5 section-doodle-2" style="background: #fdfdfd;">
-        <div class="container">
-             <h2 class="fw-bold">Doodle Variation 2</h2>
-             <p>Uses .section-doodle-2 class</p>
-        </div>
-    </section>
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});</code></pre>
+                </div>
+            </div>
 
-    <!-- Section 9: Doodle Background 3 -->
-    <section class="py-5 section-doodle-3" style="background: #fff;">
-        <div class="container">
-             <h2 class="fw-bold">Doodle Variation 3</h2>
-             <p>Uses .section-doodle-3 class</p>
         </div>
     </section>
 
