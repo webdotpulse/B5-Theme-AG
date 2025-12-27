@@ -16,6 +16,18 @@
   .nav-link {
     font-size: 1.1rem;
     padding: 0.5rem 1.5rem !important;
+    color: black !important; // Ensure nav links are black
+
+    &:hover {
+        color: #ff6b6b !important;
+    }
+  }
+
+  .navbar-toggler {
+      border: none;
+      &:focus {
+          box-shadow: none;
+      }
   }
 }
 
@@ -24,8 +36,14 @@
     color: white;
     border: none;
     border-radius: 50rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    // Icon adjustment if needed
+    i {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
 
     &:hover {
         color: white;
@@ -40,39 +58,36 @@
     padding-top: 6rem; // Space for fixed navbar
     border: none;
     box-shadow: none;
-
-    h1 {
-        // Gradient text? Mockup is white text on gradient bg, but wait.
-        // The mockup has a huge gradient background BEHIND everything in the hero.
-        // The text is white.
-    }
 }
 
-// Global gradient background for Header?
-// The mockup shows a full width gradient background for the top section.
-// I should apply this to the body or a wrapper?
-// Or maybe just the .hero-section
+// Global gradient background for Header
 .hero-section-wrapper {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    // This is just a guess. Mockup is reddish/purple.
-    // Let's try to match: Top left is red/pink, fading to purple/blue?
     background: linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    // Actually the mockup shows the gradient covering the whole viewport height almost?
     min-height: 80vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    color: white; // Text is white in mockup
+    color: white;
 
     h1, p, span, a.text-white {
         color: white !important;
     }
 
-    .navbar {
-       // Navbar is inside? No, fixed top.
+    // Ensure navbar inside doesn't override text color incorrectly if it was transparent,
+    // but here navbar is white so its links are black. The hero text is white.
+}
+
+// Page Header Wrapper (smaller version for other pages)
+.page-header-wrapper {
+    background: linear-gradient(120deg, #ff6b6b 0%, #a06cd5 100%);
+    padding-top: 8rem; // Clear navbar
+    padding-bottom: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+
+    h1, p {
+        color: white !important;
     }
 }
 
@@ -103,7 +118,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 1.5rem; // Mockup shows rounded image inside card
+          border-radius: 1.5rem;
       }
 
       .social-overlay {
@@ -134,7 +149,7 @@
       margin-bottom: 0.25rem;
 
       &.tag-secondary {
-          background: #ff8e8e; // lighter pink
+          background: #ff8e8e;
       }
   }
 }
@@ -181,6 +196,70 @@
         &:hover {
             background: #333;
         }
+    }
+}
+
+// Fancy Footer
+.fancy-footer {
+    background: #f8f9fa;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #eee;
+
+    h5 {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.8rem;
+
+            a {
+                color: #6c757d;
+                text-decoration: none;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: #ff6b6b;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            color: #333;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-decoration: none;
+            transition: all 0.3s;
+
+            &:hover {
+                background: #ff6b6b;
+                color: white;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+        color: #adb5bd;
+        font-size: 0.9rem;
     }
 }
 

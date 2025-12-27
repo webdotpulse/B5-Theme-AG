@@ -3,55 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast | MyArtSite</title>
+    <title>Podcast | Creamind</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Arsela Gjonaj</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="podcast.html">Podcast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
-                    <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
-                </ul>
+
+    <!-- Header Wrapper for subpages -->
+    <div class="page-header-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 1px;">CREAMIND</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto bg-white bg-opacity-25 rounded-pill px-3 py-1 backdrop-blur">
+                        <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Become Creator</a></li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="cv.html">CV</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="podcast.html">Podcast</a></li>
+                                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                         <a href="#" class="btn btn-gradient-pink"><i class="bi bi-person-fill"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container mt-5 pt-5">
-        <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold">The Creative Pulse</h1>
-            <p class="lead">Conversations about art, tech, and everything in between.</p>
+        <div class="container text-center">
+             <h1 class="display-4 fw-bold">The Creative Pulse</h1>
+             <p class="lead">Conversations about art, tech, and everything in between.</p>
         </div>
+    </div>
 
+    <div class="container mb-5">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <!-- Episode 1 -->
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
+                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
+                    <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
                                 <i class="bi bi-play-fill fs-3"></i>
                             </div>
                             <div>
-                                <h5 class="card-title mb-0">Ep. 1: The Future of Digital Art</h5>
+                                <h5 class="card-title mb-0 fw-bold">Ep. 1: The Future of Digital Art</h5>
                                 <small class="text-muted">October 24, 2023 • 45 min</small>
                             </div>
                         </div>
-                        <p class="card-text">In this episode, we discuss the impact of AI on digital art and how artists can adapt to the changing landscape.</p>
+                        <p class="card-text text-muted">In this episode, we discuss the impact of AI on digital art and how artists can adapt to the changing landscape.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
                              <div class="text-muted">
                                 <i class="bi bi-spotify mx-1"></i>
                                 <i class="bi bi-apple mx-1"></i>
@@ -62,20 +80,20 @@
                 </div>
 
                 <!-- Episode 2 -->
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
+                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
+                    <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
                                 <i class="bi bi-play-fill fs-3"></i>
                             </div>
                             <div>
-                                <h5 class="card-title mb-0">Ep. 2: Web Design Trends 2024</h5>
+                                <h5 class="card-title mb-0 fw-bold">Ep. 2: Web Design Trends 2024</h5>
                                 <small class="text-muted">October 17, 2023 • 38 min</small>
                             </div>
                         </div>
-                        <p class="card-text">We explore the upcoming trends in web design, from neomorphism to maximalism, and what to expect in the next year.</p>
+                        <p class="card-text text-muted">We explore the upcoming trends in web design, from neomorphism to maximalism, and what to expect in the next year.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
                              <div class="text-muted">
                                 <i class="bi bi-spotify mx-1"></i>
                                 <i class="bi bi-apple mx-1"></i>
@@ -86,20 +104,20 @@
                 </div>
 
                 <!-- Episode 3 -->
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
+                <div class="card mb-4 border-0 shadow-sm" style="border-radius: 1.5rem;">
+                    <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                            <div class="text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ff8e8e);">
                                 <i class="bi bi-play-fill fs-3"></i>
                             </div>
                             <div>
-                                <h5 class="card-title mb-0">Ep. 3: Interview with Jane Doe</h5>
+                                <h5 class="card-title mb-0 fw-bold">Ep. 3: Interview with Jane Doe</h5>
                                 <small class="text-muted">October 10, 2023 • 52 min</small>
                             </div>
                         </div>
-                        <p class="card-text">A deep dive into the career of renowned UX designer Jane Doe, discussing her journey and advice for aspiring designers.</p>
+                        <p class="card-text text-muted">A deep dive into the career of renowned UX designer Jane Doe, discussing her journey and advice for aspiring designers.</p>
                         <div class="d-flex justify-content-between align-items-center">
-                             <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                             <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill">Listen Now</a>
                              <div class="text-muted">
                                 <i class="bi bi-spotify mx-1"></i>
                                 <i class="bi bi-apple mx-1"></i>
@@ -113,9 +131,51 @@
         </div>
     </div>
 
-    <footer class="mt-5">
-        <div class="container text-center">
-            <p>&copy; 2023 MyArtSite. All rights reserved.</p>
+    <!-- Fancy Footer -->
+    <footer class="fancy-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 fw-bold">Creamind</h5>
+                    <p class="text-muted small">
+                        Turn Admiration Into Interaction. Join the community of creators and fans today.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted small">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-pill-start" placeholder="Email address" aria-label="Email address">
+                        <button class="btn btn-gradient-pink rounded-pill-end" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                &copy; 2023 Creamind. All rights reserved.
+            </div>
         </div>
     </footer>
 

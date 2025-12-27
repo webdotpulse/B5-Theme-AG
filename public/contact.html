@@ -3,54 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | MyArtSite</title>
+    <title>Contact | Creamind</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">Arsela Gjonaj</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
-                    <li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container mt-5 pt-5">
+    <!-- Header Wrapper for subpages -->
+    <div class="page-header-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 1px;">CREAMIND</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto bg-white bg-opacity-25 rounded-pill px-3 py-1 backdrop-blur">
+                        <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Become Creator</a></li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="cv.html">CV</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="podcast.html">Podcast</a></li>
+                                <li><a class="dropdown-item" href="components.html">Components</a></li>
+                                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                         <a href="#" class="btn btn-gradient-pink"><i class="bi bi-person-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center">
+             <h1 class="display-4 fw-bold">Get in Touch</h1>
+             <p class="lead">Have a project in mind? Let's talk about it.</p>
+        </div>
+    </div>
+
+    <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <div class="card shadow-lg border-0 p-5 mt-4">
-                    <h1 class="text-center mb-4">Get in Touch</h1>
-                    <p class="text-center mb-5 text-muted">Have a project in mind? Let's talk about it.</p>
+                <div class="card shadow-lg border-0 p-5" style="border-radius: 1.5rem;">
 
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" class="form-control rounded-pill" id="email" placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your project..." style="border-radius: 1rem;"></textarea>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            <button type="submit" class="btn btn-gradient-pink btn-lg rounded-pill">Send Message</button>
                         </div>
                     </form>
 
@@ -67,9 +88,51 @@
         </div>
     </div>
 
-    <footer class="mt-5">
-        <div class="container text-center">
-            <p>&copy; 2023 MyArtSite. All rights reserved.</p>
+    <!-- Fancy Footer -->
+    <footer class="fancy-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4 fw-bold">Creamind</h5>
+                    <p class="text-muted small">
+                        Turn Admiration Into Interaction. Join the community of creators and fans today.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted small">Subscribe to our newsletter for the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-pill-start" placeholder="Email address" aria-label="Email address">
+                        <button class="btn btn-gradient-pink rounded-pill-end" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                &copy; 2023 Creamind. All rights reserved.
+            </div>
         </div>
     </footer>
 
