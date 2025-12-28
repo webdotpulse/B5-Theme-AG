@@ -47,6 +47,22 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 -   `gallery.html`: Image gallery with Lightbox functionality.
 -   `admin.html`: Advanced admin dashboard with sidebar navigation.
 -   `maintenance.html`: "Under Maintenance" page for site downtime.
+-   `example-page.html`: A rich example page demonstrating the use of new custom components in a real-world layout.
+
+## New Custom Components
+
+The following custom components have been added to the theme (`src/scss/_custom.scss`) and are showcased in `components.html` and `example-page.html`:
+
+1.  **Flip Card** (`.flip-card`): Cards that flip on hover to reveal content on the back.
+2.  **Process Steps** (`.process-steps`): A visual step-by-step indicator.
+3.  **Skill Bar** (`.skill-bar-wrapper`): Fancy progress bars with labels and gradient fills.
+4.  **Avatar Group** (`.avatar-group`): Overlapping user avatars for community or team sections.
+5.  **Chat Widget** (`.chat-widget`): A static representation of a chat interface.
+6.  **Image Overlay Card** (`.image-overlay-card`): Images with a text overlay that slides up on hover.
+7.  **Breadcrumb Custom** (`.breadcrumb-custom`): Styled breadcrumb navigation.
+8.  **Pagination Custom** (`.pagination-custom`): Styled pagination links.
+9.  **Floating Action Button** (`.fab-container`): A main action button that expands to show more options.
+10. **Notification Toast** (`.toast-custom`): A custom-styled toast notification.
 
 ## Development
 
