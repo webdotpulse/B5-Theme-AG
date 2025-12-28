@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+-   **New Page**:
+    -   `example-page.html`: A comprehensive example page demonstrating 10 new custom components in realistic layouts (Services, Process, Skills, Support, etc.).
+-   **New Custom Components**:
+    -   `Flip Card` (`.flip-card`): Interactive cards that flip on hover.
+    -   `Process Steps` (`.process-steps`): Visual step-by-step indicator.
+    -   `Skill Bar` (`.skill-bar-wrapper`): Styled progress bars with labels.
+    -   `Avatar Group` (`.avatar-group`): Stacked avatars for user groups.
+    -   `Chat Widget` (`.chat-widget`): Visual representation of a chat support interface.
+    -   `Image Overlay Card` (`.image-overlay-card`): Image cards with sliding text overlays.
+    -   `Breadcrumb Custom` (`.breadcrumb-custom`): Styled breadcrumb navigation.
+    -   `Pagination Custom` (`.pagination-custom`): Styled pagination controls.
+    -   `Floating Action Button` (`.fab-container`): Expandable FAB menu.
+    -   `Notification Toast` (`.toast-custom`): Custom styled notification toast.
+-   **Component Library**:
+    -   Updated `components.html` to include isolated examples of all 10 new components.
+    -   Added "Example Page" to the "More" dropdown menu.
+
+### Added (Previous)
 -   **New Pages**:
     -   `gallery.html`: An image gallery page featuring a grid of images and a responsive Lightbox modal with carousel navigation.
     -   `admin.html`: An advanced admin dashboard with a collapsible side menu, statistics widgets, and a recent activity table.

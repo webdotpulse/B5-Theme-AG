@@ -17,7 +17,8 @@ def take_screenshots():
             "podcast.html",
             "blog.html",
             "contact.html",
-            "typography.html"
+            "typography.html",
+            "example-page.html"
         ]
 
         # Ensure directory exists
