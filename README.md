@@ -23,6 +23,7 @@ The website uses a custom Bootstrap 5 theme with the following characteristics:
 ## Pages
 
 -   `index.html`: The landing page.
+-   `about.html`: Detailed "About Me" page with bio, career journey, and media appearances.
 -   `blog.html`: Blog listing page.
 -   `blog-post.html`: Single blog post template.
 -   `contact.html`: Contact form page.
@@ -77,6 +78,7 @@ Screenshots of the pages are generated in the `screenshots/` directory using `py
 
 ## New Additions
 
+- **About Page**: `public/about.html` - Comprehensive personal profile.
 - **Doodles Page**: `public/doodles.html` - All 7 doodle variations in one place.
 - **Carousel Example**: `public/carousel.html` - Standard carousel implementation.
 - **Cheatsheet**: `public/cheatsheet.html` - Sidebar navigation with component examples.
