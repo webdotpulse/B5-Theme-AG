@@ -6,7 +6,12 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 -   **New Page**:
-    -   `example-page.html`: A comprehensive example page demonstrating 10 new custom components in realistic layouts (Services, Process, Skills, Support, etc.).
+    -   `about.html`: Created a dedicated "About Me" page detailing Arsela Gjonaj's biography, career journey in law and media, and media appearances.
+    -   `example-page.html`: A comprehensive example page demonstrating 10 new custom components in realistic layouts.
+-   **Content Updates**:
+    -   `index.html`: Updated the "Popular Users" section to "About Arsela Gjonaj", featuring a custom bio and a "Read More" button linking to the new About page. Updated "Key Areas of Expertise" with relevant skills (Legal Consulting, Media Production, etc.).
+    -   `cv.html`: Updated with specific professional experience (Legal Consultant, TV Producer), education (University of Tirana), and skills.
+    -   **Global Navigation**: Added "About" to the main navigation bar and footer across all public pages.
 -   **New Custom Components**:
     -   `Flip Card` (`.flip-card`): Interactive cards that flip on hover.
     -   `Process Steps` (`.process-steps`): Visual step-by-step indicator.
